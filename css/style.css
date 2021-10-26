@@ -1,0 +1,89 @@
+@import url("../fonts/Montserrat/font.css");
+
+.header {
+  background-color: #3d315b;
+  padding: 0 16px 0 20px;
+}
+
+.header__top {
+  margin: 0 auto 0;
+  max-width: 1290px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__city {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fefefe;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.header__city::before {
+  content: "";
+  background: url("../img/location.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.header__tel {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fefefe;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0 0 0 1.8vw;
+}
+
+.header__top-menu {
+  list-style: none;
+  margin: 0 0 0 5.1vw;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header__top-menu-item {
+  white-space: nowrap;
+}
+
+.header__top-menu-item > a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.header__sign-wrapper {
+  display: inline-block;
+}
+
+.header__sign-wrapper, .header__sign-wrapper > a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #fefefe;
+  text-decoration: none;
+}
