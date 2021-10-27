@@ -1,5 +1,7 @@
 @import url("../fonts/Montserrat/font.css");
 
+/* Header */
+
 .header {
   background-color: #3d315b;
   padding: 0 16px 0 20px;
@@ -39,6 +41,10 @@
   height: 18px;
 }
 
+.header__city:hover {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
 .header__tel {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -49,6 +55,20 @@
   text-decoration: none;
   white-space: nowrap;
   margin: 0 0 0 1.8vw;
+}
+
+.header__tel:hover {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.header__tel-icon {
+  display: none;
+  margin: 0 0 0 6.1vw;
+}
+
+.header__tel-icon:hover {
+  -webkit-filter: drop-shadow(2px 2px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(2px 2px rgba(255, 255, 255, 0.5));
 }
 
 .header__top-menu {
@@ -63,6 +83,10 @@
   white-space: nowrap;
 }
 
+.header__top-menu-item:hover {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
 .header__top-menu-item > a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -73,11 +97,12 @@
   text-decoration: none;
 }
 
-.header__sign-wrapper {
+.header__sign {
   display: inline-block;
 }
 
-.header__sign-wrapper, .header__sign-wrapper > a {
+.header__sign,
+.header__sign > a {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -86,4 +111,42 @@
   letter-spacing: 0.5px;
   color: #fefefe;
   text-decoration: none;
+}
+
+.header__sign > a:hover {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Header 1024px */
+
+@media (max-width: 1024px) {
+  .header__city {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header__tel {
+    display: none;
+  }
+
+  .header__tel-icon {
+    display: block;
+  }
+
+  .header__top-menu-item > a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header__sign,
+  .header__sign > a {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 790px) {
+  .header__top {
+    display: none;
+  }
 }
