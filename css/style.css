@@ -586,6 +586,13 @@
   padding: 34px 20px 30px;
 }
 
+.footer__bottom-menu {
+  width: 96%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 @media (max-width: 1330px) {
   .header__catalog {
     width: 50px;
@@ -1016,6 +1023,10 @@
   transition: background-color 0.1s ease-in-out;
 }
 
+.catalog__list-item_active {
+  background-color: #f0f2f8;
+}
+
 .catalog__list-item:hover,
 .catalog__list-item:focus {
   background-color: #f0f2f8;
@@ -1153,7 +1164,7 @@
     line-height: 15px;
   }
   .catalog {
-    width: 92%;
+    width: 88%;
   }
   .catalog__list-items-column {
     width: calc(90% / 3);
@@ -1171,6 +1182,6 @@
     width: calc(90% / 1);
   }
   .header__bottom-menu {
-    column-gap: 76px;
+    column-gap: 53px;
   }
 }
