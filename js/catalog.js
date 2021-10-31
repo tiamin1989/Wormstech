@@ -20,7 +20,7 @@ catItem.forEach((e, i, a) => {
   }
   e.addEventListener("click", (evt) => {
     toggleOtherEls();
-    evt.target.classList.toggle("catalog__list-item_active");
+    evt.target.classList.add("catalog__list-item_active");
   });
 });
 

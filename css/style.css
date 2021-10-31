@@ -991,6 +991,12 @@
   top: 10px;
   font-size: 30px;
   cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+.catalog__close:hover,
+.catalog__close:focus {
+  transform: rotate(45deg);
 }
 
 .catalog__list {
