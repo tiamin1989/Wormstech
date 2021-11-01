@@ -1373,9 +1373,12 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 683px) {
   .slider__item {
     height: 180px;
+  }
+  .slider__text-wrapper {
+    margin: 26px 15px 0 15px;
   }
 }
 
