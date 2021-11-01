@@ -1485,10 +1485,15 @@
   width: 100%;
   border-radius: 20px;
   position: relative;
+  transition: transform .1s ease-in-out;
 }
 
 .products__list-item > a {
   text-decoration: none;
+}
+
+.products__list-item:hover {
+  transform: translate(0, -7px);
 }
 
 .products__list-item::before {
