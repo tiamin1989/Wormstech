@@ -1332,7 +1332,7 @@
 
 @media (max-width: 1140px) {
   .slider__text-wrapper {
-    margin: 44px 0 0 190px;
+    margin: 44px 0 0 16.7vw;
   }
   .slider__title {
     font-size: 26px;
@@ -1346,7 +1346,7 @@
 
 @media (max-width: 940px) {
   .slider__text-wrapper {
-    margin: 44px 0 0 190px;
+    margin: 44px 0 0 11.7vw;
   }
   .slider__title {
     font-size: 26px;
