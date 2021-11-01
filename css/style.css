@@ -167,7 +167,7 @@
   background-color: #fff;
   max-width: 1290px;
   margin: 0 auto 0;
-  padding: 50px 20px 50px;
+  padding: 50px 20px 0;
 }
 
 .header__bottom-wrapper {
@@ -258,6 +258,42 @@
   border: 1px solid #e6e6e8;
   border-radius: 5px;
   padding: 13px 45px 13px 30px;
+}
+
+.header__search-input::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #adadad;
+}
+
+.header__search-input::-moz-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #adadad;
+}
+
+.header__search-input:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #adadad;
+}
+
+.header__search-input::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #adadad;
 }
 
 .header__search-input::placeholder {
@@ -352,6 +388,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  -moz-column-gap: 86px;
   column-gap: 86px;
 }
 
@@ -548,7 +585,9 @@
   height: 29px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: -webkit-filter 0.2s ease-in-out;
   transition: filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
 }
 
 .footer__socials-icon:hover {
@@ -783,6 +822,7 @@
 
 @media (max-width: 715px) {
   .header__bottom-menu {
+    -moz-column-gap: 76px;
     column-gap: 76px;
   }
 
@@ -895,6 +935,7 @@
   .header__bottom-menu {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    -moz-column-gap: 46px;
     column-gap: 46px;
   }
 }
@@ -987,11 +1028,14 @@
 
 .catalog__close {
   position: absolute;
-  right: 12px;
+  right: 10px;
   top: 10px;
   font-size: 30px;
   cursor: pointer;
-  transition: transform .1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  background: url("../img/cross.svg") no-repeat center;
+  width: 30px;
+  height: 30px;
 }
 
 .catalog__close:hover,
@@ -1188,6 +1232,112 @@
     width: calc(90% / 1);
   }
   .header__bottom-menu {
+    -moz-column-gap: 53px;
     column-gap: 53px;
   }
+}
+
+.slider {
+  max-width: 1290px;
+  display: flex;
+  margin: 0 auto 0;
+  max-height: 351px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__prev {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 20px rgba(61, 49, 91, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 46%;
+  left: 50px;
+  background: url("../img/arrow-slide.svg") no-repeat 46% #fefefe;
+  cursor: pointer;
+}
+
+.slider__prev:hover {
+  background: url("../img/arrow-slide-active.svg") no-repeat 56% #fefefe;
+  transform: rotate(180deg);
+}
+
+.slider__next {
+  width: 40px;
+  height: 40px;
+  background-color: #fefefe;
+  box-shadow: 0px 0px 20px rgba(61, 49, 91, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 46%;
+  right: 50px;
+  background: url("../img/arrow-slide.svg") no-repeat 46% #fefefe;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.slider__next:hover {
+  background: url("../img/arrow-slide-active.svg") no-repeat 54% #fefefe;
+  transform: rotate(0deg); /* hack */
+}
+
+.slider__item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider__dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+
+.slider__dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #FE4A49;
+}
+
+.slider__dot:hover {
+  background-color: #fe4a49;
+}
+
+.slider__dot_active {
+  background-color: #fe4a49;
+}
+
+.slider-wrapper {
+  margin: 0 0 120px;
 }
