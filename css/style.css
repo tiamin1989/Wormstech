@@ -1454,3 +1454,128 @@
     height: 6px;
   }
 }
+
+.products {
+  margin: 0 auto 0;
+  max-width: 1290px;
+}
+
+.products__title {
+  margin: 0 auto 50px 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #151528;
+}
+
+.products__list {
+  list-style: none;
+  margin: 0 auto 50px;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.products__list-item {
+  box-shadow: 0px 12px 40px rgba(77, 84, 96, 0.08);
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.products__list-item > a {
+  text-decoration: none;
+}
+
+.products__list-item::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url("../img/heart-grey.svg") no-repeat center;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.products__list-item::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("../img/shop-cart-button.svg") no-repeat center #fe4a49;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+}
+
+.products__list-img {
+  display: block;
+  margin: 28px auto 37px;
+  max-width: 240px;
+}
+
+.products__list-title {
+  margin: 0 20px 70px;
+  max-width: 260px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151528;
+}
+
+.products__list-old-price {
+  margin: 0 20px 7px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration-line: line-through;
+  color: #adadad;
+}
+
+.products__list-price {
+  margin: 0 20px 36px;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #151528;
+}
+
+.products__arrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding: 0 0 120px;
+}
+
+.products__list-prev {
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 20px rgba(61, 49, 91, 0.1);
+  border-radius: 50%;
+  background: url("../img/arrow-slide-active.svg") no-repeat 56% #fefefe;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.products__list-next {
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 20px rgba(61, 49, 91, 0.1);
+  border-radius: 50%;
+  background: url("../img/arrow-slide-active.svg") no-repeat 56% #fefefe;
+  cursor: pointer;
+}
