@@ -1241,7 +1241,7 @@
   max-width: 1290px;
   display: flex;
   margin: 0 auto 0;
-  max-height: 351px;
+  max-height: 420px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -1286,7 +1286,7 @@
 .slider__item-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .slider__item {
@@ -1347,6 +1347,7 @@
 @media (max-width: 940px) {
   .slider__text-wrapper {
     margin: 44px 0 0 11.7vw;
+    height: 287px;
   }
   .slider__title {
     font-size: 26px;
@@ -1355,6 +1356,26 @@
   .slider__description {
     font-size: 18px;
     line-height: 28px;
+  }
+  .slider__item {
+    height: 287px;
+  }
+}
+
+@media (max-width: 700px) {
+  .slider__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .slider__description {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  .slider__item {
+    height: 180px;
   }
 }
 
