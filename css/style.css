@@ -1498,7 +1498,6 @@
 }
 
 .products__list-heart {
-  content: "";
   width: 23px;
   height: 23px;
   background: url("../img/heart-grey.svg") no-repeat center;
@@ -1513,7 +1512,6 @@
 }
 
 .products__list-cart {
-  content: "";
   width: 50px;
   height: 50px;
   background: url("../img/shop-cart-button.svg") no-repeat center #fe4a49;
