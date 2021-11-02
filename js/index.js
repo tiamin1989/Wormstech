@@ -4,6 +4,8 @@ import ProductsSlider from "./products-slider.js";
 const userChoiceSection = document.querySelector("#buyers-choiсe");
 /* Новиночки */
 const noveltiesSection = document.querySelector("#novelties");
+/* Новости, обзоры и статьи */
+const newsSection = document.querySelector("#news");
 
 const uChoice = new ProductsSlider(
   userChoiceSection.querySelector(".products__list"),
@@ -19,5 +21,13 @@ const novelties = new ProductsSlider(
   noveltiesSection.querySelector(".products__list-next")
 );
 
+const news = new ProductsSlider(
+  newsSection.querySelector(".news__list"),
+  newsSection.querySelectorAll(".news__list-item"),
+  newsSection.querySelector(".products__list-prev"),
+  newsSection.querySelector(".products__list-next")
+);
+
 uChoice.init();
 novelties.init();
+news.init();
