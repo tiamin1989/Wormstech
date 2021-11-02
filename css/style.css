@@ -1594,42 +1594,6 @@
   }
 }
 
-@media (max-width: 740px) {
-  .products__list-item {
-    min-width: 135px;
-  }
-  .products__list-title {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .products__list-price {
-    margin: 0 20px 10px;
-  }
-  .products__list-img {
-    margin: 15px auto 10px;
-  }
-  .products__list-heart {
-    top: 13px;
-    right: 12px;
-    width: 16px;
-  }
-  .products__list-old-price {
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 13px;
-  }
-  .products__list-price {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .products__list-cart {
-    width: 32px;
-    height: 32px;
-    background-size: 80%;
-  }
-}
-
 .products__arrows {
   display: flex;
   justify-content: flex-end;
@@ -1664,6 +1628,45 @@
 
 .products__list-next:hover {
   box-shadow: inset 0px 0px 20px rgba(61, 49, 91, 0.1);
+}
+
+@media (max-width: 740px) {
+  .products__list-item {
+    min-width: 135px;
+  }
+  .products__list-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .products__list-price {
+    margin: 0 20px 10px;
+  }
+  .products__list-img {
+    margin: 15px auto 10px;
+  }
+  .products__list-heart {
+    top: 13px;
+    right: 12px;
+    width: 16px;
+  }
+  .products__list-old-price {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .products__list-price {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .products__list-cart {
+    width: 32px;
+    height: 32px;
+    background-size: 80%;
+  }
+  .products__arrows {
+    display: none;
+  }
 }
 
 .subscribe {
@@ -1739,6 +1742,42 @@
 
 .subscribe__submit:hover {
   background-color: #5b4989;
+}
+
+@media (max-width: 1300px) {
+  .subscribe {
+    margin: 0 20px 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .subscribe {
+    margin: 0 15px 0;
+  }
+  .subscribe__form {
+    flex-direction: column;
+  }
+  .subscribe__title {
+    margin: 0 15px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .subscribe__input {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .subscribe__input::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .subscribe__submit {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .news {
