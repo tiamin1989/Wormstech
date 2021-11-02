@@ -1513,6 +1513,7 @@
 
 .products__list-heart:hover {
   background: url("../img/heart-grey-to-red.svg") no-repeat center;
+  background-size: contain;
 }
 
 .products__list-cart {
