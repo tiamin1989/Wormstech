@@ -1459,6 +1459,8 @@
 .products {
   margin: 0 auto 0;
   max-width: 1290px;
+  padding: 0 20px 0;
+  overflow-x: hidden;
 }
 
 .products__title {
@@ -1482,8 +1484,10 @@
 
 .products__list-item {
   box-shadow: 0px 12px 40px rgba(77, 84, 96, 0.08);
-  max-width: 300px;
-  width: 100%;
+  /* max-width: 300px;
+  width: 100%; */
+  min-width: 300px;
+  width: 300px;
   border-radius: 20px;
   position: relative;
   transition: transform 0.1s ease-in-out;
@@ -1493,9 +1497,9 @@
   text-decoration: none;
 }
 
-.products__list-item:hover {
+/* .products__list-item:hover {
   transform: translate(0, -7px);
-}
+} */
 
 .products__list-heart {
   width: 23px;
@@ -1711,6 +1715,10 @@
   letter-spacing: 0.5px;
   text-decoration-line: underline;
   color: #fe4a49;
+}
+
+.news__blog:hover {
+  color: #5b4989;
 }
 
 .news__list {
