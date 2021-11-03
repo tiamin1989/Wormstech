@@ -1488,11 +1488,11 @@
 }
 
 .products__list-item {
-  box-shadow: 0px 12px 40px rgba(77 84 96 / 0.08);
   min-width: 300px;
   border-radius: 20px;
   position: relative;
   transition: transform 0.1s ease-in-out;
+  box-shadow: 0px 12px 40px 0px #4D54600A;
 }
 
 .products__list-item > a {
@@ -1500,7 +1500,7 @@
 }
 
 .products__list-item:hover {
-  box-shadow: 0px 12px 40px rgb(77 84 96 / 20%);
+  box-shadow: 0px 12px 40px 0px #ebebeb;
 }
 
 .products__list-heart {
@@ -1911,7 +1911,6 @@
 
 .breadcrumbs {
   max-width: 1290px;
-  width: 100%;
   margin: 0 auto 0;
   display: flex;
   padding: 50px 32px;
@@ -1926,6 +1925,10 @@
   line-height: 20px;
   text-decoration: none;
   color: #adadad;
+}
+
+.breadcrumbs__link:hover {
+  color: #151528;
 }
 
 .breadcrumbs__link-text_highlight {
@@ -1944,10 +1947,12 @@
   display: flex;
   max-width: 1290px;
   margin: 0 auto 0;
+  gap: 15px;
 }
 
 .catalog-sec__column:first-child {
   max-width: 275px;
+  width: 100%;
 }
 
 .catalog-sec__title {
@@ -1985,6 +1990,7 @@
   align-items: center;
   gap: 8px;
   position: relative;
+  cursor: pointer;
 }
 
 .catalog-sec__checkbox-label {
@@ -1994,6 +2000,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #151528;
+  cursor: pointer;
 }
 
 .catalog-sec__checkbox-label::before {
@@ -2063,8 +2070,8 @@
 
 .catalog-sec__prices {
   display: flex;
-  justify-content: space-between;
   margin: 0 0 10px;
+  gap: 18px;
 }
 
 .catalog-sec__prices-input {
@@ -2076,6 +2083,13 @@
   margin: 0 0 13px;
   border: 1px solid #adadad;
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #151528;
 }
 
 .catalog-sec__prices-input::placeholder {

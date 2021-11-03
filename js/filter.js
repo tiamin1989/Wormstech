@@ -28,3 +28,12 @@ lowerSlider.oninput = function () {
     }
   }
 };
+
+const tabs = document.querySelectorAll(".catalog-sec__title");
+tabs.forEach((e) => {
+  e.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("catalog-sec__title")) {
+      console.log('ok');
+    }
+  });
+})
