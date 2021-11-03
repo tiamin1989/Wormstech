@@ -1934,3 +1934,124 @@
     line-height: 16px;
   }
 }
+
+.catalog-sec {
+  display: flex;
+  max-width: 1290px;
+  margin: 0 auto 0;
+}
+
+.catalog-sec__column:first-child {
+  max-width: 275px;
+}
+
+.catalog-sec__title {
+  margin: 0 0 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151528;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.catalog-sec__title::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../img/filter-arrow.svg") no-repeat center;
+}
+
+.catalog-sec__checkbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.catalog-sec__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.catalog-sec__checkbox-label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #151528;
+}
+
+.catalog-sec__checkbox-label::before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  border: 2px solid #e6e6e8;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catalog-sec__checkbox-label::after {
+  height: 21px;
+  width: 21px;
+  background: url("../img/checkbox.svg") no-repeat center #3d315b;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catalog-sec__checkbox-input {
+  height: 21px;
+  width: 21px;
+  opacity: 0;
+}
+
+.catalog-sec__checkbox-input + .catalog-sec__checkbox-label::after {
+  content: none;
+}
+
+.catalog-sec__checkbox-input:checked + .catalog-sec__checkbox-label::after {
+  content: "";
+}
+
+.catalog-sec__checkbox-input:checked + .catalog-sec__checkbox-label {
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.catalog-sec__filter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.catalog-sec__checkbox-list-show {
+  margin: 10px 0 0;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #fe4a49;
+  cursor: pointer;
+}
+
+.catalog-sec__checkbox-list-show:hover {
+  color: #3d315b;
+}

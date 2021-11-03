@@ -10,30 +10,131 @@
   </head>
   <body class="body">
     <main class="main">
+      <div
+        itemscope
+        itemtype="http://schema.org/BreadcrumbList"
+        class="breadcrumbs"
+      >
+        <span
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem"
+        >
+          <a itemprop="item" href="./" class="breadcrumbs__link">
+            <span itemprop="name" class="breadcrumbs__link-text">Главная</span>
+          </a>
+          <meta itemprop="position" itemprop="1" />
+        </span>
+        /
+        <span
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem"
+        >
+          <a itemprop="item" href="#" class="breadcrumbs__link"
+            ><!-- ссылка на Смартфоны -->
+            <span itemprop="name" class="breadcrumbs__link-text"
+              >Смартфоны</span
+            >
+          </a>
+          <meta itemprop="position" itemprop="2" />
+        </span>
+        /
+        <span
+          itemprop="itemListElement"
+          itemscope
+          itemtype="http://schema.org/ListItem"
+        >
+          <a itemprop="item" href="#" class="breadcrumbs__link"
+            ><!-- ссылка на Xiaomi -->
+            <span
+              itemprop="name"
+              class="breadcrumbs__link-text breadcrumbs__link-text_highlight"
+              >Xiaomi</span
+            >
+          </a>
+          <meta itemprop="position" itemprop="3" />
+        </span>
+      </div>
 
-        <div itemscope itemtype = "http://schema.org/BreadcrumbList" class="breadcrumbs">
-            <span itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
-               <a itemprop = "item" href = "./" class="breadcrumbs__link">
-               <span itemprop = "name" class="breadcrumbs__link-text">Главная</span>
-               </a>
-               <meta itemprop = "position" itemprop = "1"/>
-            </span>
-            /
-            <span itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
-               <a itemprop = "item" href = "#" class="breadcrumbs__link"><!-- ссылка на Смартфоны -->
-               <span itemprop = "name" class="breadcrumbs__link-text">Смартфоны</span>
-               </a>
-               <meta itemprop = "position" itemprop = "2"/>
-            </span>
-            /
-            <span itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
-               <a itemprop = "item" href = "#" class="breadcrumbs__link"><!-- ссылка на Xiaomi -->
-               <span itemprop = "name" class="breadcrumbs__link-text breadcrumbs__link-text_highlight">Xiaomi</span>
-               </a>
-               <meta itemprop = "position" itemprop = "3"/>
-            </span>
-         </div>
-        
+      <div class="catalog-sec">
+        <div class="catalog-sec__column">
+          <ul class="catalog-sec__filter">
+            <li class="catalog-sec__filter-item">
+              <h3 class="catalog-sec__title">Модель смартфона</h3>
+              <ul class="catalog-sec__checkbox-list">
+                <li class="catalog-sec__checkbox">
+                  <input
+                    type="checkbox"
+                    class="catalog-sec__checkbox-input"
+                    id="checkbox_1"
+                  />
+                  <label class="catalog-sec__checkbox-label" for="checkbox_1"
+                    >Xiaomi</label
+                  >
+                </li>
+                <li class="catalog-sec__checkbox">
+                  <input
+                    type="checkbox"
+                    class="catalog-sec__checkbox-input"
+                    id="checkbox_2"
+                  />
+                  <label class="catalog-sec__checkbox-label" for="checkbox_2"
+                    >Apple</label
+                  >
+                </li>
+                <li class="catalog-sec__checkbox">
+                  <input
+                    type="checkbox"
+                    class="catalog-sec__checkbox-input"
+                    id="checkbox_3"
+                  />
+                  <label class="catalog-sec__checkbox-label" for="checkbox_3"
+                    >Samsung</label
+                  >
+                </li>
+                <li class="catalog-sec__checkbox">
+                  <input
+                    type="checkbox"
+                    class="catalog-sec__checkbox-input"
+                    id="checkbox_4"
+                  />
+                  <label class="catalog-sec__checkbox-label" for="checkbox_4"
+                    >Huawei</label
+                  >
+                </li>
+                <li class="catalog-sec__checkbox">
+                  <input
+                    type="checkbox"
+                    class="catalog-sec__checkbox-input"
+                    id="checkbox_5"
+                  />
+                  <label class="catalog-sec__checkbox-label" for="checkbox_5"
+                    >Meizu</label
+                  >
+                </li>
+                <li class="catalog-sec__checkbox">
+                  <input
+                    type="checkbox"
+                    class="catalog-sec__checkbox-input"
+                    id="checkbox_6"
+                  />
+                  <label class="catalog-sec__checkbox-label" for="checkbox_6"
+                    >LG</label
+                  >
+                </li>
+              </ul>
+              <span class="catalog-sec__checkbox-list-show">Показать все</span>
+            </li>
+            <li class="catalog-sec__filter-item">
+              <h3 class="catalog-sec__title">Цена</h3>
+              <input type="range" id="cost" name="cost" min="5390" max="75890" />
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-sec__column"></div>
+      </div>
+
       <section class="subscribe">
         <h2 class="subscribe__title">
           Подпишитесь и получите промокод на скидку 30%
