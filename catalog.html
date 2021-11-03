@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wormstech - Каталог</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="body">
+    <main class="main">
+
+        <div itemscope itemtype = "http://schema.org/BreadcrumbList" class="breadcrumbs">
+            <span itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+               <a itemprop = "item" href = "./" class="breadcrumbs__link">
+               <span itemprop = "name" class="breadcrumbs__link-text">Главная</span>
+               </a>
+               <meta itemprop = "position" itemprop = "1"/>
+            </span>
+            /
+            <span itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+               <a itemprop = "item" href = "#" class="breadcrumbs__link"><!-- ссылка на Смартфоны -->
+               <span itemprop = "name" class="breadcrumbs__link-text">Смартфоны</span>
+               </a>
+               <meta itemprop = "position" itemprop = "2"/>
+            </span>
+            /
+            <span itemprop = "itemListElement" itemscope itemtype = "http://schema.org/ListItem">
+               <a itemprop = "item" href = "#" class="breadcrumbs__link"><!-- ссылка на Xiaomi -->
+               <span itemprop = "name" class="breadcrumbs__link-text breadcrumbs__link-text_highlight">Xiaomi</span>
+               </a>
+               <meta itemprop = "position" itemprop = "3"/>
+            </span>
+         </div>
+        
+      <section class="subscribe">
+        <h2 class="subscribe__title">
+          Подпишитесь и получите промокод на скидку 30%
+        </h2>
+        <form action="" class="subscribe__form">
+          <input
+            class="subscribe__input"
+            type="text"
+            name="subscribe_input"
+            id="subscribe_input"
+            placeholder="Ваш e-mail / телефон"
+          />
+          <input class="subscribe__submit" type="submit" value="Подписаться" />
+        </form>
+      </section>
+
+      <section class="news" id="news">
+        <div class="news__title-wrapper">
+          <h2 class="news__title">Новости и обзоры</h2>
+          <a href="#" class="news__blog">Перейти в блог</a>
+        </div>
+        <ul class="news__list">
+          <li class="news__list-item">
+            <a href="#" class="news__list-item-link">
+              <img
+                src="./img/news/Image1.png"
+                alt="Новость 1"
+                class="news__list-img"
+              />
+              <h3 class="news__list-title">Обзор Xiaomi Mi Note 10</h3>
+            </a>
+          </li>
+          <li class="news__list-item">
+            <a href="#" class="news__list-item-link">
+              <img
+                src="./img/news/Image2.png"
+                alt="Новость 2"
+                class="news__list-img"
+              />
+              <h3 class="news__list-title">Собираем игровой ПК до 70 000</h3>
+            </a>
+          </li>
+          <li class="news__list-item">
+            <a href="#" class="news__list-item-link">
+              <img
+                src="./img/news/Image3.png"
+                alt="Новость 3"
+                class="news__list-img"
+              />
+              <h3 class="news__list-title">Лучшие смартфоны 2020</h3>
+            </a>
+          </li>
+        </ul>
+        <div class="products__arrows">
+          <span class="products__list-prev"></span>
+          <span class="products__list-next"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__main-wrapper">
+        <div class="footer__container">
+          <div class="footer__menu-wrapper">
+            <h3 class="footer__title">О компании</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="#">О нас</a></li>
+              <li class="footer__list-item"><a href="#">Контакты</a></li>
+              <li class="footer__list-item"><a href="#">Блог</a></li>
+              <li class="footer__list-item"><a href="#">Вакансии</a></li>
+              <li class="footer__list-item"><a href="#">Сертификаты</a></li>
+              <li class="footer__list-item"><a href="#">Наши клиенты</a></li>
+              <li class="footer__list-item"><a href="#">Партнерам</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-wrapper">
+            <h3 class="footer__title">Покупателям</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="footer__list-item"><a href="#">Акции и скидки</a></li>
+              <li class="footer__list-item">
+                <a href="#">Отзывы и предложения</a>
+              </li>
+              <li class="footer__list-item"><a href="#">Гарантия</a></li>
+              <li class="footer__list-item"><a href="#">Каталог</a></li>
+              <li class="footer__list-item"><a href="#">Опт</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <a href="tel:+74959996699" class="footer__tel">8 (495) 999-66-99</a>
+            <div class="footer__hours">
+              <span class="footer__hours-item">Пн - чт c 09:00 до 21:00</span>
+              <span class="footer__hours-item">Пт - вс с 09:00 до 20:00</span>
+            </div>
+            <a href="mailto:help@wormstech.ru" class="footer__mail"
+              >help@wormstech.ru</a
+            >
+          </div>
+        </div>
+        <div class="footer__connect">
+          <button class="footer__call">Обратный звонок</button>
+          <div class="footer__socials">
+            <a
+              href="https://vk.com"
+              title="ВКонтакте"
+              class="footer__socials-icon footer__socials-icon_vk"
+            ></a>
+            <a
+              href="https://youtube.com"
+              title="Youtube"
+              class="footer__socials-icon footer__socials-icon_yt"
+            ></a>
+            <a
+              href="https://facebook.com"
+              title="Facebook"
+              class="footer__socials-icon footer__socials-icon_fb"
+            ></a>
+            <a
+              href="https://twitter.com"
+              title="Twitter"
+              class="footer__socials-icon footer__socials-icon_tw"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom-wrapper">
+        <div class="footer__bottom">
+          <a href="#" class="footer__bottom-link"
+            >Политика конфиденциальности</a
+          >
+          <a href="#" class="footer__bottom-link">Публичная оферта</a>
+        </div>
+        <span class="footer__copyright"
+          >Сайт разработан в
+          <a href="#" class="footer__copyright-link">Plan B agency</a></span
+        >
+      </div>
+      <ul class="footer__bottom-menu">
+        <li class="footer__bottom-item">
+          <a
+            href="#"
+            title="Главная"
+            class="footer__bottom-menu-link footer__bottom-menu-link_house"
+            >Главная</a
+          >
+        </li>
+        <li class="footer__bottom-item">
+          <a
+            href="#"
+            title="Избранное"
+            class="footer__bottom-menu-link footer__bottom-menu-link_heart"
+            >Избранное</a
+          >
+        </li>
+        <li class="footer__bottom-item">
+          <a
+            href="#"
+            title="Каталог"
+            class="footer__bottom-menu-link footer__bottom-menu-link_zoom"
+            >Каталог</a
+          >
+        </li>
+        <li class="footer__bottom-item">
+          <a
+            href="#"
+            title="Корзина"
+            class="footer__bottom-menu-link footer__bottom-menu-link_cart"
+            >Корзина</a
+          >
+        </li>
+        <li class="footer__bottom-item">
+          <a
+            href="#"
+            title="Войти"
+            class="footer__bottom-menu-link footer__bottom-menu-link_smile"
+            >Войти</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="./js/catalog-menu.js"></script>
+    <script type="module" src="./js/catalog.js"></script>
+  </body>
+</html>

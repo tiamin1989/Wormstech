@@ -76,6 +76,11 @@ export default class ProductsSlider {
       () => {
         this.listStyle = window.getComputedStyle(this.list);
         this.itemLength = this.items[0].offsetWidth;
+        this.index = parseInt(parseInt(this.listStyle.width) / this.itemLength);
+        this.shiftDistance = 0;
+        this.items.forEach((e) => {
+          e.style.transform = `translate(${this.shiftDistance}px)`;
+        });
       },
       true
     );

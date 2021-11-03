@@ -4,7 +4,7 @@ import ProductsSlider from "./products-slider.js";
 const userChoiceSection = document.querySelector("#buyers-choiсe");
 /* Новиночки */
 const noveltiesSection = document.querySelector("#novelties");
-/* ННовости и обзоры */
+/* Новости и обзоры */
 const newsSection = document.querySelector("#news");
 
 const uChoice = new ProductsSlider(
