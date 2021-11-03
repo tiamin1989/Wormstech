@@ -7,12 +7,12 @@ export default class filterTab {
 
   show() {
     this.content.style.height = "100%";
-    this.arrow.style.transform = "rotate(180deg)";
+    this.arrow.style.transform = "rotate(0deg)";
   }
 
   hide() {
     this.content.style.height = "0px";
-    this.arrow.style.transform = "rotate(0deg)";
+    this.arrow.style.transform = "rotate(180deg)";
   }
 
   init() {
