@@ -1969,8 +1969,7 @@
   cursor: pointer;
 }
 
-.catalog-sec__title::after {
-  content: "";
+.catalog-sec__title-arrow {
   width: 16px;
   height: 16px;
   background: url("../img/filter-arrow.svg") no-repeat center;
@@ -1983,6 +1982,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  overflow: hidden;
 }
 
 .catalog-sec__checkbox {
@@ -2072,6 +2072,10 @@
   display: flex;
   margin: 0 0 10px;
   gap: 18px;
+}
+
+.catalog-sec__prices-wrapper {
+  overflow: hidden;
 }
 
 .catalog-sec__prices-input {

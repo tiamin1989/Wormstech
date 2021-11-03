@@ -61,7 +61,9 @@
         <div class="catalog-sec__column">
           <ul class="catalog-sec__filter">
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title">Модель смартфона</h3>
+              <h3 class="catalog-sec__title" id="smarts">
+                Модель смартфона<span class="catalog-sec__title-arrow"></span>
+              </h3>
               <ul class="catalog-sec__checkbox-list">
                 <li class="catalog-sec__checkbox">
                   <input
@@ -127,39 +129,63 @@
               <span class="catalog-sec__checkbox-list-show">Показать все</span>
             </li>
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title">Цена</h3>
-              <div class="catalog-sec__prices">
-                <input
-                  class="catalog-sec__prices-input"
-                  type="text"
-                  id="lower-text"
-                  placeholder="от"
-                />
-                <input
-                  class="catalog-sec__prices-input"
-                  type="text"
-                  id="upper-text"
-                  placeholder="до"
-                />
+              <h3 class="catalog-sec__title" id="price">
+                Цена<span class="catalog-sec__title-arrow"></span>
+              </h3>
+              <div class="catalog-sec__prices-wrapper">
+                <div class="catalog-sec__prices">
+                  <input
+                    class="catalog-sec__prices-input"
+                    type="text"
+                    id="lower-text"
+                    placeholder="от"
+                  />
+                  <input
+                    class="catalog-sec__prices-input"
+                    type="text"
+                    id="upper-text"
+                    placeholder="до"
+                  />
+                </div>
+                <div class="multi-range">
+                  <input
+                    type="range"
+                    min="5390"
+                    max="75890"
+                    value="5390"
+                    step="1"
+                    id="lower"
+                  />
+                  <input
+                    type="range"
+                    min="5390"
+                    max="75890"
+                    value="75890"
+                    step="1"
+                    id="upper"
+                  />
+                </div>
               </div>
-              <div class="multi-range">
-                <input type="range" min="0" max="50" value="5" id="lower" />
-                <input type="range" min="0" max="50" value="45" id="upper" />
-              </div>
             </li>
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title">Диагональ экрана</h3>
+              <h3 class="catalog-sec__title">
+                Диагональ экрана<span class="catalog-sec__title-arrow"></span>
+              </h3>
             </li>
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title">Встроенная память</h3>
+              <h3 class="catalog-sec__title">
+                Встроенная память<span class="catalog-sec__title-arrow"></span>
+              </h3>
             </li>
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title">Оперативная память</h3>
+              <h3 class="catalog-sec__title">
+                Оперативная память<span class="catalog-sec__title-arrow"></span>
+              </h3>
             </li>
           </ul>
         </div>
         <div class="catalog-sec__column">
-          <section class="products" >
+          <section class="products">
             <ul class="products__list products__list_full">
               <li class="products__list-item">
                 <a href="#">
@@ -307,7 +333,6 @@
               </li>
             </ul>
           </section>
-          
         </div>
       </div>
 
@@ -496,7 +521,8 @@
       </ul>
     </footer>
     <!-- <script src="./js/catalog-menu.js"></script> -->
-    <script src="./js/filter.js"></script>
+    <script type="module" src="./js/filter-tab.js"></script>
+    <script type="module" src="./js/filter.js"></script>
     <script type="module" src="./js/catalog.js"></script>
   </body>
 </html>
