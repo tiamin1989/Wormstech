@@ -128,7 +128,23 @@
             </li>
             <li class="catalog-sec__filter-item">
               <h3 class="catalog-sec__title">Цена</h3>
-              <input type="range" id="cost" name="cost" min="5390" max="75890" />
+              <div class="catalog-sec__prices">
+                <input class="catalog-sec__prices-input" type="text" id="lower-text" placeholder="от">
+                <input class="catalog-sec__prices-input" type="text" id="upper-text" placeholder="до">
+              </div>
+              <div class="multi-range">
+                <input type="range" min="0" max="50" value="5" id="lower" />
+                <input type="range" min="0" max="50" value="45" id="upper" />
+              </div>
+            </li>
+            <li class="catalog-sec__filter-item">
+              <h3 class="catalog-sec__title">Диагональ экрана</h3>
+            </li>
+            <li class="catalog-sec__filter-item">
+              <h3 class="catalog-sec__title">Встроенная память</h3>
+            </li>
+            <li class="catalog-sec__filter-item">
+              <h3 class="catalog-sec__title">Оперативная память</h3>
             </li>
           </ul>
         </div>
@@ -320,6 +336,7 @@
       </ul>
     </footer>
     <script src="./js/catalog-menu.js"></script>
+    <script src="./js/filter.js"></script>
     <script type="module" src="./js/catalog.js"></script>
   </body>
 </html>

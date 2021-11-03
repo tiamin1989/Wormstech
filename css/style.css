@@ -1946,7 +1946,7 @@
 }
 
 .catalog-sec__title {
-  margin: 0 0 15px;
+  margin: 0 0 8px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -2054,4 +2054,89 @@
 
 .catalog-sec__checkbox-list-show:hover {
   color: #3d315b;
+}
+
+.catalog-sec__prices {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+}
+
+.catalog-sec__prices-input {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 86px;
+  height: 36px;
+  padding: 8px 18px 8px;
+  margin: 0 0 13px;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+}
+
+.catalog-sec__prices-input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #adadad;
+}
+
+.multi-range input[type="range"] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 1px;
+  outline: none;
+  background: linear-gradient(#3d315b, #3d315b) no-repeat center;
+  background-size: 100% 6px;
+  pointer-events: none;
+}
+.multi-range input[type="range"]:active,
+.multi-range input[type="range"]:focus {
+  outline: none;
+}
+.multi-range input[type="range"]::-webkit-slider-thumb {
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  background-color: #fff;
+  position: relative;
+  margin: 5px 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: all;
+  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+.multi-range input[type="range"]::-webkit-slider-thumb::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 100%;
+  width: 2000px;
+  height: 2px;
+}
+.multi-range {
+  position: relative;
+  height: 50px;
+  display: block;
+}
+.multi-range input[type="range"] {
+  position: absolute;
+  max-width: 188px;
+  width: 100%;
+}
+.multi-range input[type="range"]:nth-child(1)::-webkit-slider-thumb::before {
+  background-color: red;
+}
+.multi-range input[type="range"]:nth-child(2) {
+  background: none;
+}
+.multi-range input[type="range"]:nth-child(2)::-webkit-slider-thumb::before {
+  background-color: grey;
 }
