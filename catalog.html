@@ -10,52 +10,61 @@
   </head>
   <body class="body">
     <main class="main">
-      <div
+      <ul
         itemscope
-        itemtype="http://schema.org/BreadcrumbList"
+        itemtype="https://schema.org/BreadcrumbList"
         class="breadcrumbs"
       >
-        <span
+        <li
           itemprop="itemListElement"
           itemscope
-          itemtype="http://schema.org/ListItem"
+          itemtype="https://schema.org/ListItem"
+          class="breadcrumbs__item"
         >
-          <a itemprop="item" href="./" class="breadcrumbs__link">
+          <a
+            href="./"
+            title="Главная"
+            itemprop="item"
+            class="breadcrumbs__link"
+          >
             <span itemprop="name" class="breadcrumbs__link-text">Главная</span>
+            <meta itemprop="position" content="0" />
           </a>
-          <meta itemprop="position" itemprop="1" />
-        </span>
-        /
-        <span
+        </li>
+        <li
           itemprop="itemListElement"
           itemscope
-          itemtype="http://schema.org/ListItem"
+          itemtype="https://schema.org/ListItem"
+          class="breadcrumbs__item"
         >
-          <a itemprop="item" href="#" class="breadcrumbs__link"
-            ><!-- ссылка на Смартфоны -->
+          <a
+            href="#"
+            title="Смартфоны"
+            itemprop="item"
+            class="breadcrumbs__link"
+          >
             <span itemprop="name" class="breadcrumbs__link-text"
               >Смартфоны</span
             >
+            <meta itemprop="position" content="1" />
           </a>
-          <meta itemprop="position" itemprop="2" />
-        </span>
-        /
-        <span
+        </li>
+        <li
           itemprop="itemListElement"
           itemscope
-          itemtype="http://schema.org/ListItem"
+          itemtype="https://schema.org/ListItem"
+          class="breadcrumbs__item"
         >
-          <a itemprop="item" href="#" class="breadcrumbs__link"
-            ><!-- ссылка на Xiaomi -->
+          <a href="#" title="Xiaomi" itemprop="item" class="breadcrumbs__link">
             <span
               itemprop="name"
               class="breadcrumbs__link-text breadcrumbs__link-text_highlight"
               >Xiaomi</span
             >
+            <meta itemprop="position" content="2" />
           </a>
-          <meta itemprop="position" itemprop="3" />
-        </span>
-      </div>
+        </li>
+      </ul>
 
       <div class="catalog-sec">
         <div class="catalog-sec__column">
@@ -186,6 +195,22 @@
         </div>
         <div class="catalog-sec__column">
           <section class="products">
+
+            <ul class="products-sort">
+              <li class="products-sort__item">
+                <div class="products-sort__item-wrapper">
+                  <h3 class="products-sort__item-title">
+                    Cортировать по умолчанию
+                    <span class="products-sort__item-arrow"></span>
+                  </h3>
+                  <ul class="products-sort__submenu">
+                    <li class="products-sort__submenu-item">Цена</li>
+                    <li class="products-sort__submenu-item">Отзывы</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
             <ul class="products__list products__list_full">
               <li class="products__list-item">
                 <a href="#">
@@ -337,18 +362,10 @@
               <div class="products__pages-wrapper">
                 <span class="products__list-prev"></span>
                 <div class="products__more-page">
-                  <a href="#" class="products__more-page-link">
-                    1
-                  </a>
-                  <a href="#" class="products__more-page-link">
-                    2
-                  </a>
-                  <a href="#" class="products__more-page-link">
-                    3
-                  </a>
-                  <a href="#" class="products__more-page-link">
-                    &#8230;
-                  </a>
+                  <a href="#" class="products__more-page-link"> 1 </a>
+                  <a href="#" class="products__more-page-link"> 2 </a>
+                  <a href="#" class="products__more-page-link"> 3 </a>
+                  <a href="#" class="products__more-page-link"> &#8230; </a>
                 </div>
                 <span class="products__list-next"></span>
               </div>
@@ -361,7 +378,7 @@
         <h2 class="subscribe__title">
           Подпишитесь и получите промокод на скидку 30%
         </h2>
-        <form action="" class="subscribe__form">
+        <form class="subscribe__form">
           <input
             class="subscribe__input"
             type="text"

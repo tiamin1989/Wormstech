@@ -6,7 +6,7 @@ export default class filterTab {
   }
 
   show() {
-    this.content.style.height = "100%";
+    this.content.style.height = "unset";
     this.arrow.style.transform = "rotate(0deg)";
   }
 

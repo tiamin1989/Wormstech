@@ -410,7 +410,6 @@
 }
 
 .header__bottom-menu-item > a:hover {
-  /* border-bottom: 2px solid #151528; UNDERLINE */
   color: #fe4a49;
 }
 
@@ -627,7 +626,7 @@
 }
 
 .footer__bottom-menu {
-  width: 96%;
+  width: 98%;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1942,6 +1941,11 @@
   display: flex;
   padding: 50px 32px;
   gap: 5px;
+  list-style: none;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "/";
 }
 
 .breadcrumbs__link {
@@ -1975,6 +1979,7 @@
   max-width: 1290px;
   margin: 0 auto 0;
   gap: 15px;
+  padding: 0 32px;
 }
 
 .catalog-sec__column:first-child {
@@ -1983,7 +1988,7 @@
 }
 
 .catalog-sec__title {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1994,6 +1999,8 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
 }
 
 .catalog-sec__title-arrow {
@@ -2214,4 +2221,73 @@
 .products__pages-more:hover {
   background: #fe4a49;
   color: #fefefe;
+}
+
+.products-sort {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 40px;
+  display: flex;
+}
+
+.products-sort__item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #21263580;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.products-sort__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #21263580;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  user-select: none;
+  position: relative;
+  z-index: 2;
+}
+
+.products-sort__item-arrow {
+  width: 16px;
+  height: 16px;
+  background: url("../img/arrow-slide-active-bottom.svg") no-repeat center;
+  background-size: contain;
+}
+
+.products-sort__submenu {
+  list-style: none;
+  margin: 0;
+  padding: 15px 0 0;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.products-sort__submenu-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #21263580;
+  padding: 0 0 10px;
+}
+
+.products-sort__submenu-item:hover {
+  color: #151528;
 }
