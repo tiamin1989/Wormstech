@@ -63,11 +63,6 @@ export default class ProductsSlider {
       false
     );
     this.list.addEventListener(
-      "mousedown",
-      (evt) => this.startTouch(evt),
-      false
-    );
-    this.list.addEventListener(
       "touchmove",
       (evt) => this.moveTouch(evt),
       false
