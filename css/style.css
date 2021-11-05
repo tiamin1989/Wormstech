@@ -1287,7 +1287,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .slider__item {
@@ -1560,7 +1560,7 @@
   font-size: 18px;
   line-height: 22px;
   -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   color: #adadad;
 }
 
@@ -1904,7 +1904,7 @@
   line-height: 17px;
   letter-spacing: 0.5px;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #fe4a49;
 }
 
@@ -2034,14 +2034,23 @@
 }
 
 .catalog-sec {
-  display: flex;
   max-width: 1290px;
   margin: 0 auto 0;
   gap: 15px;
   padding: 0 32px;
+  display: grid;
+  grid-template-areas: 
+            ". a a"
+            "b c c"
+            "b c c";
 }
 
-.catalog-sec__column:first-child {
+.catalog-sec__column {
+  grid-area: c;
+}
+
+.catalog-sec__column-left {
+  grid-area: b;
   max-width: 275px;
   width: 100%;
 }
@@ -2060,9 +2069,9 @@
   cursor: pointer;
   white-space: nowrap;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .catalog-sec__title-arrow {
@@ -2136,6 +2145,24 @@
   line-height: 22px;
 }
 
+.catalog-sec__filter-toggler {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #151528;
+  display: none;
+  gap: 10px;
+}
+
+.catalog-sec__filter-toggler::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url("../img/filter-icon.svg") no-repeat center;
+}
+
 .catalog-sec__filter {
   list-style: none;
   margin: 0;
@@ -2143,6 +2170,22 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+@media (max-width: 960px) {
+  .catalog-sec__filter-toggler {
+    display: flex;
+  }
+  .catalog-sec__column-left {
+    display: none;
+  }
+}
+
+.catalog-sec-tools {
+  grid-area: a;
+  display: flex;
+  gap: 20vw;
+  padding: 0 35px 0;
 }
 
 .catalog-sec__checkbox-list-show {
@@ -2325,7 +2368,7 @@
 .products-sort {
   list-style: none;
   margin: 0;
-  padding: 0 0 40px;
+  padding: 0 0 18px;
   display: flex;
 }
 
@@ -2352,9 +2395,9 @@
   display: flex;
   gap: 20px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: relative;
   z-index: 2;
 }
