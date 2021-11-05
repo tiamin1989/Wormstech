@@ -2310,6 +2310,15 @@
   color: #adadad;
 }
 
+@media (max-width: 440px) {
+  .products {
+    padding: 0
+  }
+  .catalog-sec-tools {
+    padding: 0 10px 0;
+  }
+}
+
 .multi-range input[type="range"] {
   box-sizing: border-box;
   -webkit-appearance: none;
