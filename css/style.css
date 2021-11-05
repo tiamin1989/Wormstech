@@ -2072,12 +2072,9 @@
 }
 
 .catalog-sec__checkbox-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 10px;
   overflow: hidden;
 }
 
@@ -2149,7 +2146,6 @@
 }
 
 .catalog-sec__checkbox-list-show {
-  margin: 10px 0 0;
   display: block;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -2175,6 +2171,7 @@
 }
 
 .catalog-sec__prices-input {
+  outline: none;
   box-sizing: border-box;
   display: inline-block;
   width: 86px;
