@@ -20,7 +20,7 @@ export default class FilterSort {
     this.title.addEventListener(
       "click",
       () => {
-        if (this.clicked === false) {
+        if (!this.clicked) {
           this.clicked = true;
           this.show();
         } else {
