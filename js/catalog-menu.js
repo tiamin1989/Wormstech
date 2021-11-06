@@ -18,7 +18,7 @@ catItem.forEach((e, i, a) => {
       e.classList.remove("catalog__list-item_active");
     });
   }
-  e.addEventListener("click", (evt) => {
+  e.addEventListener("mouseover", (evt) => {
     toggleOtherEls();
     evt.target.classList.add("catalog__list-item_active");
   });
@@ -33,7 +33,7 @@ catalogButton.addEventListener("click", () => {
 });
 
 for (let item in classes) {
-  document.querySelector(`.${item}`).addEventListener("click", (evt) => {
+  document.querySelector(`.${item}`).addEventListener("mouseover", (evt) => {
     for (let item in classes) {
       if (!evt.target.classList.contains(`${item}`))
         document.querySelector(`.${classes[item]}`).style.display = "none";

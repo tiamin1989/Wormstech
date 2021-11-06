@@ -1,5 +1,4 @@
 import ProductsSlider from "./products-slider.js";
-import SwipeDetector from "./swipe-detect.js";
 
 /* Выбор покупателей */
 const userChoiceSection = document.querySelector("#buyers-choiсe");
@@ -32,21 +31,3 @@ var news = new ProductsSlider(
 uChoice.init();
 novelties.init();
 news.init();
-
-/* const testF = (direction) => {
-  if (direction === "left") {
-    news.toRight();
-    console.log('to right',news)
-  }
-  if (direction === "right") {
-    news.toLeft();
-    console.log('to left',news)
-  }
-}
-
-const u = new SwipeDetector(
-  newsSection.querySelector(".news__list"),
-  testF
-);
-
-u.init(); */

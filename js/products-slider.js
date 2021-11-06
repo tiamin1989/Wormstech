@@ -8,8 +8,8 @@ export default class ProductsSlider {
     this.shiftDistance = 0;
     this.gap = parseInt(this.listStyle.gap);
     this.itemLength = this.items[0].offsetWidth;
-    this.initialX = null;
-    this.initialY = null;
+    this.initialPoint = 0;
+    this.finalPoint = 0;
     this.fullCount = parseInt(parseInt(this.listStyle.width) / this.itemLength);
     this.index = 1 * this.fullCount;
   }
@@ -32,42 +32,46 @@ export default class ProductsSlider {
     this.index++;
   }
 
-  startTouch(e) {
-    this.initialX = e.touches[0].clientX;
-    this.initialY = e.touches[0].clientY;
-  }
-
-  moveTouch(e) {
-    if (this.initialX === null) return;
-    if (this.initialY === null) return;
-
-    let currentX = e.touches[0].clientX;
-    let currentY = e.touches[0].clientY;
-
-    let diffX = this.initialX - currentX;
-    let diffY = this.initialY - currentY;
-
-    if (Math.abs(diffX) > Math.abs(diffY)) {
-      if (diffX > 0) this.toRight();
-      else this.toLeft();
-    }
-    this.initialX = null;
-    this.initialY = null;
-    e.preventDefault();
-  }
-
   init() {
     this.list.addEventListener(
       "touchstart",
       (evt) => {
-        this.startTouch(evt);
+        evt.preventDefault();
+        evt.stopPropagation();
+        this.initialPoint = evt.changedTouches[0];
       },
       false
     );
+
     this.list.addEventListener(
       "touchmove",
       (evt) => {
-        this.moveTouch(evt);
+        evt.preventDefault();
+        evt.stopPropagation();
+        this.finalPoint = evt.changedTouches[0];
+        var xAbs = Math.abs(this.initialPoint.pageX - this.finalPoint.pageX);
+        var yAbs = Math.abs(this.initialPoint.pageY - this.finalPoint.pageY);
+        if (xAbs > 20 || yAbs > 20) {
+          if (xAbs > yAbs) {
+            if (this.finalPoint.pageX < this.initialPoint.pageX) {
+              /*СВАЙП ВЛЕВО*/
+              console.log("СВАЙП ВЛЕВО");
+              this.toRight();
+            } else {
+              /*СВАЙП ВПРАВО*/
+              console.log("СВАЙП ВПРАВО");
+              this.toLeft();
+            }
+          } else {
+            if (this.finalPoint.pageY < this.initialPoint.pageY) {
+              /*СВАЙП ВВЕРХ*/
+              console.log("СВАЙП ВВЕРХ");
+            } else {
+              /*СВАЙП ВНИЗ*/
+              console.log("СВАЙП ВНИЗ");
+            }
+          }
+        }
       },
       false
     );
