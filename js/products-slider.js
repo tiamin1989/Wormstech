@@ -59,12 +59,16 @@ export default class ProductsSlider {
   init() {
     this.list.addEventListener(
       "touchstart",
-      (evt) => this.startTouch(evt),
+      (evt) => {
+        this.startTouch(evt);
+      },
       false
     );
     this.list.addEventListener(
       "touchmove",
-      (evt) => this.moveTouch(evt),
+      (evt) => {
+        this.moveTouch(evt);
+      },
       false
     );
 

@@ -1,4 +1,5 @@
 import ProductsSlider from "./products-slider.js";
+import SwipeDetector from "./swipe-detect.js";
 
 /* Выбор покупателей */
 const userChoiceSection = document.querySelector("#buyers-choiсe");
@@ -21,7 +22,7 @@ const novelties = new ProductsSlider(
   noveltiesSection.querySelector(".products__list-next")
 );
 
-const news = new ProductsSlider(
+var news = new ProductsSlider(
   newsSection.querySelector(".news__list"),
   newsSection.querySelectorAll(".news__list-item"),
   newsSection.querySelector(".products__list-prev"),
@@ -31,3 +32,21 @@ const news = new ProductsSlider(
 uChoice.init();
 novelties.init();
 news.init();
+
+/* const testF = (direction) => {
+  if (direction === "left") {
+    news.toRight();
+    console.log('to right',news)
+  }
+  if (direction === "right") {
+    news.toLeft();
+    console.log('to left',news)
+  }
+}
+
+const u = new SwipeDetector(
+  newsSection.querySelector(".news__list"),
+  testF
+);
+
+u.init(); */
