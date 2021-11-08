@@ -2179,6 +2179,7 @@
   color: #151528;
   display: none;
   gap: 10px;
+  cursor: pointer;
 }
 
 .catalog-sec__filter-toggler::before {
@@ -2207,6 +2208,11 @@
   .catalog-sec {
     padding: 0;
   }
+}
+
+
+.catalog-sec__column-left_active {
+  display: block;
 }
 
 .catalog-sec-tools {
