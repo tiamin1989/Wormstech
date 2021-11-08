@@ -12,6 +12,10 @@ const close = document.querySelector(".catalog__close");
 const catalog = document.querySelector(".catalog");
 const catItem = document.querySelectorAll(".catalog__list-item");
 
+function insertAfter(referenceNode, newNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
 catItem.forEach((e, i, a) => {
   function toggleOtherEls() {
     a.forEach((e) => {
@@ -33,15 +37,11 @@ catalogButton.addEventListener("click", () => {
 });
 
 for (let item in classes) {
-
-  /* document.querySelector(`.${item}`)
-   .insertAdjacentHTML('afterend', document.querySelector(`.${classes[item]}`).outerHTML); */
-
-  
   document.querySelector(`.${item}`).addEventListener("mouseover", (evt) => {
     for (let item in classes) {
-      if (!evt.target.classList.contains(`${item}`))
+      if (!evt.target.classList.contains(`${item}`)) {
         document.querySelector(`.${classes[item]}`).style.display = "none";
+      }
     }
     document.querySelector(`.${classes[item]}`).style.display = "flex";
   });

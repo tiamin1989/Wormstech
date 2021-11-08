@@ -1,7 +1,7 @@
 export default class ProductsSlider {
   constructor(list, items, left, right) {
     this.list = list;
-    this.listStyle = window.getComputedStyle(this.list,null);
+    this.listStyle = window.getComputedStyle(this.list, null);
     this.items = items;
     this.left = left;
     this.right = right;
@@ -83,6 +83,7 @@ export default class ProductsSlider {
       "resize",
       () => {
         this.listStyle = window.getComputedStyle(this.list);
+        this.gap = parseInt(this.listStyle.gap ? this.listStyle.gap : "30px");/* for firefox */
         this.itemLength = this.items[0].offsetWidth;
         this.index = parseInt(parseInt(this.listStyle.width) / this.itemLength);
         this.shiftDistance = 0;
