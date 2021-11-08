@@ -33,6 +33,11 @@ catalogButton.addEventListener("click", () => {
 });
 
 for (let item in classes) {
+
+  /* document.querySelector(`.${item}`)
+   .insertAdjacentHTML('afterend', document.querySelector(`.${classes[item]}`).outerHTML); */
+
+  
   document.querySelector(`.${item}`).addEventListener("mouseover", (evt) => {
     for (let item in classes) {
       if (!evt.target.classList.contains(`${item}`))

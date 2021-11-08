@@ -1,12 +1,12 @@
 export default class ProductsSlider {
   constructor(list, items, left, right) {
     this.list = list;
-    this.listStyle = window.getComputedStyle(this.list);
+    this.listStyle = window.getComputedStyle(this.list,null);
     this.items = items;
     this.left = left;
     this.right = right;
     this.shiftDistance = 0;
-    this.gap = parseInt(this.listStyle.gap);
+    this.gap = parseInt(this.listStyle.gap ? this.listStyle.gap : "30px");/* for firefox */
     this.itemLength = this.items[0].offsetWidth;
     this.initialPoint = 0;
     this.finalPoint = 0;
@@ -55,20 +55,16 @@ export default class ProductsSlider {
           if (xAbs > yAbs) {
             if (this.finalPoint.pageX < this.initialPoint.pageX) {
               /*СВАЙП ВЛЕВО*/
-              console.log("СВАЙП ВЛЕВО");
               this.toRight();
             } else {
               /*СВАЙП ВПРАВО*/
-              console.log("СВАЙП ВПРАВО");
               this.toLeft();
             }
           } else {
             if (this.finalPoint.pageY < this.initialPoint.pageY) {
               /*СВАЙП ВВЕРХ*/
-              console.log("СВАЙП ВВЕРХ");
             } else {
               /*СВАЙП ВНИЗ*/
-              console.log("СВАЙП ВНИЗ");
             }
           }
         }
@@ -76,8 +72,12 @@ export default class ProductsSlider {
       false
     );
 
-    this.left.addEventListener("click", () => this.toLeft());
-    this.right.addEventListener("click", () => this.toRight());
+    this.left.addEventListener("click", () => {
+      this.toLeft();
+    });
+    this.right.addEventListener("click", () => {
+      this.toRight();
+    });
 
     window.addEventListener(
       "resize",
