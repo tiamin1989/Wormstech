@@ -662,20 +662,20 @@
 
       <section class="shop-cart">
         <div class="shop-cart__title-wrapper">
-            <h2 class="shop-cart__title">Корзина</h2>
-            <a
-              href="#"
-              title="Вернуться к покупкам"
-              class="shop-cart__action-text shop-cart__action-text_back-to-buy"
-              >Вернуться к покупкам</a
-            >
-            <a
-              href="#"
-              title="Очистить корзину"
-              class="shop-cart__action-text shop-cart__action-text_clear-cart"
-              >Очистить корзину</a
-            >
-          </div>
+          <h2 class="shop-cart__title">Корзина</h2>
+          <a
+            href="#"
+            title="Вернуться к покупкам"
+            class="shop-cart__action-text shop-cart__action-text_back-to-buy"
+            >Вернуться к покупкам</a
+          >
+          <a
+            href="#"
+            title="Очистить корзину"
+            class="shop-cart__action-text shop-cart__action-text_clear-cart"
+            >Очистить корзину</a
+          >
+        </div>
         <div class="shop-cart__column-left">
           <div class="shop-cart__product">
             <img
@@ -684,7 +684,9 @@
               class="shop-cart-img"
             />
             <h3 class="shop-cart__product-title">
-              <a href="#" title="Смартфон Xiaomi Mi Note 10 Lite 6/128GB">Смартфон Xiaomi Mi Note 10 Lite 6/128GB</a>
+              <a href="#" title="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
+                >Смартфон Xiaomi Mi Note 10 Lite 6/128GB</a
+              >
             </h3>
             <ul class="card__actions card__actions_cart">
               <li class="card__actions-item">
@@ -713,7 +715,12 @@
               class="shop-cart-img"
             />
             <h3 class="shop-cart__product-title">
-              <a href="#" title="Ноутбук ACER Aspire 7IPS, Intel Core i7 8ГБ, 512ГБ SSD, NVIDIA GeForce GTX">Ноутбук ACER Aspire 7IPS, Intel Core i7 8ГБ, 512ГБ SSD, NVIDIA GeForce GTX</a>
+              <a
+                href="#"
+                title="Ноутбук ACER Aspire 7IPS, Intel Core i7 8ГБ, 512ГБ SSD, NVIDIA GeForce GTX"
+                >Ноутбук ACER Aspire 7IPS, Intel Core i7 8ГБ, 512ГБ SSD, NVIDIA
+                GeForce GTX</a
+              >
             </h3>
             <ul class="card__actions card__actions_cart">
               <li class="card__actions-item">
@@ -784,19 +791,39 @@
                 </tr>
               </tfoot>
             </table>
-            <div class="shop-cart__promo-wrapper">
+            <div class="shop-cart__buy-wrapper">
+              <div class="shop-cart__promo-wrapper">
+                <input
+                  class="shop-cart__promo"
+                  type="text"
+                  name="promo"
+                  id="promo"
+                  placeholder="Промокод на скидку"
+                />
+                <span class="shop-cart__message shop-cart__message_success"
+                  >Код успешно применен</span
+                >
+              </div>
               <input
-                class="shop-cart__promo"
-                type="text"
-                name="promo"
-                id="promo"
-                placeholder="Промокод на скидку"
+                class="shop-cart__buy-button"
+                type="submit"
+                value="Оформить"
               />
             </div>
-            <span class="shop-cart__message shop-cart__message_success"
-              >Код успешно применен</span
-            >
-            <input class="shop-cart__buy-button" type="submit" value="Оформить">
+          </div>
+          <div class="discount">
+            <input
+              type="checkbox"
+              id="discount-toggle"
+              class="discount__checkbox"
+            />
+            <label for="discount-toggle" class="discount__label"
+              >Скидки на следующий заказ
+            </label>
+            <p class="discount__content">
+              Авторизуйтесь / зарегистрируйтесь, чтобы получать кэшбек от
+              стоимости заказа Бонусными рублями
+            </p>
           </div>
         </div>
       </section>
