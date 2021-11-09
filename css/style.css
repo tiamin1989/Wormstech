@@ -3622,6 +3622,10 @@
 }
 
 @media (max-width: 580px) {
+  .discount {
+    padding: 80px 20px 30px;
+  }
+
   .discount__label {
     display: flex;
   }
