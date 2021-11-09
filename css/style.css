@@ -3181,6 +3181,15 @@
   background: url("../img/plus.svg") no-repeat center;
 }
 
+@media (max-width: 1200px) {
+  .shop-cart {
+    grid-template-areas:
+    "shop-cart-title shop-cart-title"
+    "shop-cart-left shop-cart-left"
+    "shop-cart-right shop-cart-right";
+  }
+}
+
 @media (max-width: 580px) {
   .shop-cart {
     padding: 0 15px 0;
@@ -3256,7 +3265,8 @@
 }
 
 .shop-cart__counter {
-  margin: 0 auto 0;
+  padding: 0 5vw 0;
+  max-width: 270px;
   grid-area: product-counter;
   display: flex;
   gap: 20px;
