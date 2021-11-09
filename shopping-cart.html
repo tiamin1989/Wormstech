@@ -700,14 +700,76 @@
             <span class="shop-cart__price">29990 ₽</span>
             <span class="shop-cart__old-price">32990 ₽</span>
             <a
-            href="#"
-            title="Удалить"
-            class="shop-cart__action-text shop-cart__action-text_delete"
-            >Удалить</a
-          >
+              href="#"
+              title="Удалить"
+              class="shop-cart__action-text shop-cart__action-text_delete"
+              >Удалить</a
+            >
           </div>
         </div>
-        <div class="shop-cart__column-right"></div>
+        <div class="shop-cart__column-right">
+          <div class="shop-cart__buy">
+            <table class="shop-cart__buy-table" cellpadding="0" cellspacing="0">
+              <thead class="shop-cart__buy-title">
+                <th colspan="2">Ваш заказ</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="shop-cart__buy-table-col">Товары</td>
+                  <td
+                    class="
+                      shop-cart__buy-table-col shop-cart__buy-table-col_count
+                    "
+                  >
+                    2
+                  </td>
+                </tr>
+                <tr>
+                  <td class="shop-cart__buy-table-col">Скидка</td>
+                  <td
+                    class="
+                      shop-cart__buy-table-col shop-cart__buy-table-col_price
+                    "
+                  >
+                    4100 ₽
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td
+                    class="
+                      shop-cart__buy-table-col shop-cart__buy-table-col_total
+                    "
+                  >
+                    Итого:
+                  </td>
+                  <td
+                    class="
+                      shop-cart__buy-table-col
+                      shop-cart__buy-table-col_total-count
+                    "
+                  >
+                    103380 ₽
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="shop-cart__promo-wrapper">
+              <input
+                class="shop-cart__promo"
+                type="text"
+                name="promo"
+                id="promo"
+                placeholder="Промокод на скидку"
+              />
+            </div>
+            <span class="shop-cart__message shop-cart__message_success"
+              >Код успешно применен</span
+            >
+            <input class="shop-cart__buy-button" type="submit" value="Оформить">
+          </div>
+        </div>
       </section>
     </main>
 
