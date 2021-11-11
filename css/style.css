@@ -574,43 +574,6 @@
   background-color: #5b4989;
 }
 
-.footer__socials {
-  display: flex;
-  justify-content: flex-end;
-  gap: 35px;
-}
-
-.footer__socials-icon {
-  width: 34px;
-  height: 29px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: -webkit-filter 0.2s ease-in-out;
-  transition: filter 0.2s ease-in-out;
-  transition: filter 0.2s ease-in-out, -webkit-filter 0.2s ease-in-out;
-}
-
-.footer__socials-icon:hover {
-  -webkit-filter: drop-shadow(2px 2px rgba(255, 255, 255, 0.5));
-  filter: drop-shadow(2px 2px rgba(255, 255, 255, 0.5));
-}
-
-.footer__socials-icon_vk {
-  background-image: url("../img/vk.svg");
-}
-
-.footer__socials-icon_yt {
-  background-image: url("../img/yt.svg");
-}
-
-.footer__socials-icon_fb {
-  background-image: url("../img/fb.svg");
-}
-
-.footer__socials-icon_tw {
-  background-image: url("../img/tw.svg");
-}
-
 .footer__divider {
   margin: 52px auto 0;
   max-width: 1290px;
@@ -4095,7 +4058,7 @@
 }
 
 .sign-wrapper {
-  transform: translate(0, 30vh);
+  transform: translate(0, 20vh);
   margin: 0 auto 0;
   padding: 36px 50px 70px;
   max-width: 450px;
@@ -4109,7 +4072,7 @@
 }
 
 .sign__label {
-  margin: 0 30px 12px 0;
+  margin: 0 26px 12px 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -4220,6 +4183,10 @@
   cursor: pointer;
 }
 
+.sign__button_reg {
+  margin: 10px 0 20px;
+}
+
 .sign__button:hover {
   background-color: #3d315b;
 }
@@ -4236,10 +4203,25 @@
   color: #adadad;
 }
 
-.sign__socials {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.socials {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.socials__icon {
+  width: 32px;
+  height: 29px;
+  object-fit: contain;
+}
+
+.socials__icon_red {
+  filter: invert(38%) sepia(52%) saturate(4162%) hue-rotate(337deg)
+    brightness(114%) contrast(101%);
+}
+
+.socials__icon_white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(163deg)
+    brightness(103%) contrast(102%);
 }
