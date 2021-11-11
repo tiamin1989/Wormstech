@@ -3628,6 +3628,7 @@
 
   .discount__label {
     display: flex;
+    margin: 30px 0 0;
   }
 
   .discount__content {
@@ -3648,9 +3649,9 @@
 @media (max-width: 1200px) {
   .order {
     grid-template-areas:
-    "title"
-    "left"
-    "right";
+      "title"
+      "left"
+      "right";
   }
 }
 
@@ -3719,8 +3720,8 @@
 
 .order__product {
   padding: 30px 0 20px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas: "product-img product-title product-price";
   align-items: center;
 }
 
@@ -3729,9 +3730,15 @@
 }
 
 .order__product-img {
+  grid-area: product-img;
   max-width: 80px;
   width: 100%;
   object-fit: contain;
+}
+
+.order__product-title {
+  grid-area: product-title;
+  max-width: 340px;
 }
 
 .order__product-title,
@@ -3751,6 +3758,8 @@
 }
 
 .order__product-price {
+  grid-area: product-price;
+  justify-self: right;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -3919,7 +3928,6 @@
 }
 
 .order__person-label {
-  max-width: 354px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -3995,13 +4003,84 @@
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .order {
+    padding: 0 20px 80px;
+  }
 
-@media (max-width: 740px) {
   .discount_order-page {
-    padding: 30px 0 20px;
+    padding: 0;
   }
 
   .shop-cart__buy_order-page {
-    margin: 0;
+    margin: 20px 0 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .order__product {
+    grid-template-areas:
+      "product-img product-title"
+      "product-img product-price";
+  }
+  .order__product-price {
+    justify-self: left;
+  }
+  .order__person-container {
+    flex-direction: column;
+  }
+  .order__person-column {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 580px) {
+  .order__product-title,
+  .order__product-title a {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .order__product-price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .order__sub-title {
+    font-weight: 400;
+  }
+  .order__label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .order__delivery-pickup-text {
+    font-size: 14px;
+  }
+  .order__delivery-pickup-button {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    width: 260px;
+  }
+  .order__contacts-container {
+    flex-direction: column;
+  }
+  .order__person-label {
+    font-weight: 400;
+  }
+  .order__text {
+    font-size: 14px;
+  }
+  .order__text::placeholder {
+    font-size: 14px;
+  }
+  .order__textarea {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .order__textarea::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
