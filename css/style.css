@@ -4279,18 +4279,27 @@
 }
 
 .personal__label {
-  display: inline-block;
-  padding: 0 0 14px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #151528;
-  border-bottom: 1px solid #E6E6E8;
   cursor: pointer;
+  display: inline-flex;
 }
 
-.personal__label:hover {
-  border-bottom: 1px solid #FE4A49;
+.personal__label-in {
+  border-bottom: 1px solid #e6e6e8;
+  padding: 0 0 14px;
+}
+
+.personal__label-empty {
+  border-bottom: 1px solid #e6e6e8;
+  width: 50px;
+  padding: 0 0 14px;
+}
+
+.personal__label-in:hover {
+  border-bottom: 1px solid #fe4a49;
 }
