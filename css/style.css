@@ -4256,3 +4256,41 @@
     font-size: 14px;
   }
 }
+
+.personal {
+  margin: 0 auto 0;
+  max-width: 1290px;
+  padding: 0 20px 0;
+  font-size: 0; /* для удаления пробела между inline элементами  */
+}
+
+.personal__title {
+  margin: 0 0 30px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #151528;
+}
+
+.personal__radio {
+  display: none;
+}
+
+.personal__label {
+  display: inline-block;
+  padding: 0 0 14px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #151528;
+  border-bottom: 1px solid #E6E6E8;
+  cursor: pointer;
+}
+
+.personal__label:hover {
+  border-bottom: 1px solid #FE4A49;
+}
