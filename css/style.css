@@ -1996,7 +1996,7 @@
   color: #151528;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 715px) {
   .breadcrumbs {
     padding: 0 15px 30px;
   }
@@ -4338,5 +4338,9 @@
     font-weight: 400;
     font-size: 10px;
     line-height: 16px;
+  }
+  .personal__title {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
