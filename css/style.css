@@ -4305,11 +4305,16 @@
   border-bottom: 1px solid #fe4a49;
 }
 
+.personal__radio:checked + .personal__label > .personal__label-in {
+  border-bottom: 1px solid #fe4a49;
+  padding: 0 0 14px;
+}
+
 @media (max-width: 768px) {
   .personal__label-empty {
     display: none;
   }
-  
+
   .personal__label {
     display: flex;
   }
@@ -4349,10 +4354,6 @@
     font-size: 18px;
     line-height: 22px;
   }
-
-  .personal__label-empty {
-    display: none;
-  }
 }
 
 .personal__content {
@@ -4375,3 +4376,125 @@
 #personal4:checked ~ #content-personal4 {
   display: block;
 }
+
+.personal__content-wrapper {
+  padding: 50px 0 0;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "personal-info personal-subscribes"
+    "personal-password personal-cashback"
+    "personal-address .";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .personal__content-wrapper {
+    padding: 20px 0 0;
+  }
+}
+
+.personal__content-item {
+  padding: 36px 30px 48px;
+  box-shadow: 0px 12px 40px rgba(77, 84, 96, 0.08);
+  border-radius: 20px;
+}
+
+.personal__content-item_info {
+  grid-area: personal-info;
+}
+
+.personal__content-item_subscribes {
+  grid-area: personal-subscribes;
+}
+
+.personal__content-item_password {
+  grid-area: personal-password;
+}
+
+.personal__content-item_cashback {
+  grid-area: personal-cashback;
+}
+
+.personal__content-item_address {
+  grid-area: personal-address;
+}
+
+.personal__content-title {
+  margin: 0 0 24px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151528;
+}
+
+.personal__input-container {
+  display: flex;
+  gap: 20px;
+}
+
+.personal__input-wrapper {
+  padding: 11px 18px;
+  margin: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #e6e6e8;
+  border-radius: 5px;
+  color: #adadad;
+  position: relative;
+}
+
+.personal__input {
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #151528;
+  position: absolute;
+  left: 11.2vw;
+  width: calc(100% - 13vw);
+}
+
+.personal__input-label {
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.personal__input-wrapper:hover {
+  outline: 2px solid #3d315b;
+}
+
+.personal__input-wrapper_short {
+  max-width: 275px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.personal__date-input {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #151528;
+}
+
+.personal__date-input::-webkit-calendar-picker-indicator{
+  display: none;
+}
+
