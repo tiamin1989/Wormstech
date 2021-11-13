@@ -4477,12 +4477,18 @@
 .personal__input-wrapper_short {
   max-width: 275px;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal__input-wrapper_short .personal__input-label {
+  width: 50%;
 }
 
 .personal__date-input {
+  text-align: center;
   appearance: none;
   border: 0;
   outline: 0;
@@ -4492,6 +4498,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #151528;
+  width: 50%;
 }
 
 .personal__date-input::-webkit-calendar-picker-indicator{
