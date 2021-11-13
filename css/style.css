@@ -4431,6 +4431,10 @@
   color: #151528;
 }
 
+.personal__content-title_small-margin {
+  margin: 0 0 12px;
+}
+
 .personal__input-container {
   display: flex;
   gap: 20px;
@@ -4601,4 +4605,15 @@
     font-size: 12px;
     line-height: 18px;
   }
+}
+
+
+.personal__content-text {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #adadad;
 }
