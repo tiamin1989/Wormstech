@@ -710,7 +710,10 @@
 
         <div class="personal__content" id="content-personal1">
           <div class="personal__content-wrapper">
-            <div class="personal__content-item personal__content-item_info">
+            <form
+              name="personal-info"
+              class="personal__content-item personal__content-item_info"
+            >
               <h3 class="personal__content-title">Персональные данные</h3>
               <div class="personal__input-wrapper">
                 <label for="personal-name" class="personal__input-label"
@@ -718,7 +721,7 @@
                 >
                 <input
                   type="text"
-                  name="personal"
+                  name="personal-info"
                   id="personal-name"
                   class="personal__input"
                 />
@@ -729,7 +732,7 @@
                 >
                 <input
                   type="phone"
-                  name="personal"
+                  name="personal-info"
                   id="personal-phone"
                   class="personal__input"
                 />
@@ -740,7 +743,7 @@
                 >
                 <input
                   type="email"
-                  name="personal"
+                  name="personal-info"
                   id="personal-mail"
                   class="personal__input"
                 />
@@ -755,7 +758,7 @@
                   >
                   <input
                     type="datetime"
-                    name="personal"
+                    name="personal-info"
                     id="personal-date"
                     class="personal__date-input"
                     value="Не указано"
@@ -768,7 +771,7 @@
                     >Пол:</label
                   >
                   <select
-                    name="personal"
+                    name="personal-info"
                     id="personal-gender"
                     class="personal__select"
                   >
@@ -777,7 +780,24 @@
                   </select>
                 </div>
               </div>
-            </div>
+
+              <div class="personal__action">
+                <input
+                  type="reset"
+                  name="personal-info"
+                  id="personal-info-reset"
+                  value="Отменить"
+                  class="personal__action-input"
+                />
+                <input
+                  type="submit"
+                  name="personal-info"
+                  id="personal-info-submit"
+                  value="Сохранить"
+                  class="personal__action-input personal__action-input_red"
+                />
+              </div>
+            </form>
             <div
               class="personal__content-item personal__content-item_subscribes"
             >

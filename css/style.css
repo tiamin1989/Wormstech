@@ -4471,7 +4471,8 @@
   width: 100%;
 }
 
-.personal__input-wrapper:hover {
+.personal__input-wrapper:hover,
+.personal__input-wrapper:focus {
   outline: 2px solid #3d315b;
 }
 
@@ -4494,15 +4495,11 @@
   outline: 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #151528;
   width: 40%;
-}
-
-.personal__date-input::-webkit-calendar-picker-indicator {
-  display: none;
 }
 
 .personal__select {
@@ -4548,6 +4545,38 @@
   }
 }
 
+.personal__action {
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 26px;
+}
+
+.personal__action-input {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #adadad;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.personal__action-input:hover {
+  color: #fe4a49;
+  text-decoration: underline;
+}
+
+.personal__action-input_red {
+  color: #fe4a49;
+}
+
+.personal__action-input_red:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 715px) {
   .personal__content-title {
     font-size: 16px;
@@ -4566,6 +4595,10 @@
   }
   .personal__date-input {
     font-size: 14px;
+    line-height: 18px;
+  }
+  .personal__action-input {
+    font-size: 12px;
     line-height: 18px;
   }
 }
