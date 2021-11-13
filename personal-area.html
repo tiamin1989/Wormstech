@@ -782,20 +782,23 @@
               </div>
 
               <div class="personal__action">
-                <input
-                  type="reset"
-                  name="personal-info"
-                  id="personal-info-reset"
-                  value="Отменить"
-                  class="personal__action-input"
-                />
-                <input
-                  type="submit"
-                  name="personal-info"
-                  id="personal-info-submit"
-                  value="Сохранить"
-                  class="personal__action-input personal__action-input_red"
-                />
+                <div>Изменения сохранены</div>
+                <div>
+                  <input
+                    type="reset"
+                    name="personal-info"
+                    id="personal-info-reset"
+                    value="Отменить"
+                    class="personal__action-input"
+                  />
+                  <input
+                    type="submit"
+                    name="personal-info"
+                    id="personal-info-submit"
+                    value="Сохранить"
+                    class="personal__action-input personal__action-input_red"
+                  />
+                </div>
               </div>
             </form>
             <form
@@ -858,24 +861,52 @@
                 </div>
               </div>
               <div class="personal__action">
-                <input
-                  type="reset"
-                  name="personal-info"
-                  id="personal-info-reset2"
-                  value="Отменить"
-                  class="personal__action-input"
-                />
-                <input
-                  type="submit"
-                  name="personal-info"
-                  id="personal-info-submit2"
-                  value="Сохранить"
-                  class="personal__action-input personal__action-input_red"
-                />
+                <div></div>
+                <div>
+                  <input
+                    type="reset"
+                    name="personal-info"
+                    id="personal-info-reset2"
+                    value="Отменить"
+                    class="personal__action-input"
+                  />
+                  <input
+                    type="submit"
+                    name="personal-info"
+                    id="personal-info-submit2"
+                    value="Сохранить"
+                    class="personal__action-input personal__action-input_red"
+                  />
+                </div>
               </div>
             </form>
             <div class="personal__content-item personal__content-item_password">
-              Изменение пароля
+              <h3 class="personal__content-title">Изменение пароля</h3>
+              <input
+                type="password"
+                name="sign"
+                class="input"
+                placeholder="Введите старый пароль:*"
+              />
+              <input
+                type="password"
+                name="sign"
+                class="input"
+                placeholder="Введите новый пароль:"
+              />
+              <input
+                type="password"
+                name="sign"
+                class="input"
+                placeholder="Повторите новый пароль:"
+              />
+              <div class="personal__action">
+                <div>Изменения сохранены</div>
+                <div>
+                  <input type="reset" name="personal-info" id="personal-info-reset3" value="Отменить" class="personal__action-input">
+                  <input type="submit" name="personal-info" id="personal-info-submit3" value="Сохранить" class="personal__action-input personal__action-input_red">
+                </div>
+              </div>
             </div>
             <div class="personal__content-item personal__content-item_cashback">
               Кэшбек
