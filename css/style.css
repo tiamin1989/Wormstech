@@ -4525,3 +4525,47 @@
     width: 100%;
   }
 }
+
+@media (max-width: 860px) {
+  .personal__content-wrapper {
+    padding: 20px 0 0;
+    gap: 20px;
+    grid-template-areas:
+      "personal-info"
+      "personal-subscribes"
+      "personal-password"
+      "personal-cashback"
+      "personal-address";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .personal__input {
+    left: 30.2vw;
+    width: calc(100% - 33vw);
+  }
+  .personal__content-item {
+    padding: 26px 20px 30px;
+  }
+}
+
+@media (max-width: 715px) {
+  .personal__content-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .personal__input-wrapper {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .personal__input-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .personal__input-wrapper_short {
+    width: 100%;
+  }
+  .personal__date-input {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
