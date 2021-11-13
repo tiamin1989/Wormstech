@@ -4448,6 +4448,7 @@
   border-radius: 5px;
   color: #adadad;
   position: relative;
+  user-select: none;
 }
 
 .personal__input {
@@ -4484,11 +4485,10 @@
 }
 
 .personal__input-wrapper_short .personal__input-label {
-  width: 50%;
+  width: 60%;
 }
 
 .personal__date-input {
-  text-align: center;
   appearance: none;
   border: 0;
   outline: 0;
@@ -4498,10 +4498,30 @@
   font-size: 16px;
   line-height: 20px;
   color: #151528;
-  width: 50%;
+  width: 40%;
 }
 
-.personal__date-input::-webkit-calendar-picker-indicator{
+.personal__date-input::-webkit-calendar-picker-indicator {
   display: none;
 }
 
+.personal__select {
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+@media (max-width: 1380px) {
+  .personal__input-wrapper_short {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .personal__date-input {
+    width: 100%;
+  }
+
+  .personal__input-wrapper_short .personal__input-label {
+    width: 100%;
+  }
+}
