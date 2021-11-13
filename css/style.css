@@ -4407,6 +4407,9 @@
 
 .personal__content-item_subscribes {
   grid-area: personal-subscribes;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .personal__content-item_password {
@@ -4605,8 +4608,15 @@
     font-size: 12px;
     line-height: 18px;
   }
+  .catalog-sec__checkbox-label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .personal__content-text {
+    font-size: 13px;
+  }
 }
-
 
 .personal__content-text {
   margin: 0;
@@ -4617,3 +4627,12 @@
   line-height: 20px;
   color: #adadad;
 }
+
+.catalog-sec__checkbox_personal-page {
+  margin: 30px 0 0;
+}
+
+.catalog-sec__checkbox_personal-page:not(:first-of-type) {
+  margin: 18px 0 0;
+}
+
