@@ -4362,6 +4362,9 @@
   font-size: 18px;
 }
 
+.personal__content_red {
+}
+
 #personal1:checked ~ #content-personal1 {
   display: block;
 }
@@ -4387,7 +4390,7 @@
     "personal-password personal-cashback"
     "personal-address .";
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
 @media (max-width: 768px) {
@@ -4400,6 +4403,12 @@
   padding: 36px 30px 48px;
   box-shadow: 0px 12px 40px rgba(77, 84, 96, 0.08);
   border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #151528;
 }
 
 .personal__content-item_info {
@@ -4433,6 +4442,28 @@
   font-size: 18px;
   line-height: 22px;
   color: #151528;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal__content-title-action,
+.personal__content-title-action > a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #15a2de;
+  display: inline-flex;
+}
+
+.personal__content-title-action > a:hover {
+  color: #fe4a49;
+}
+
+.personal__content-title-action::before {
+  content: "+";
 }
 
 .personal__content-title_small-margin {
@@ -4545,8 +4576,8 @@
     grid-template-rows: repeat(5, 1fr);
   }
   .personal__input {
-    left: 30.2vw;
-    width: calc(100% - 33vw);
+    left: 40%;
+    width: calc(100% - 45%);
   }
   .personal__content-item {
     padding: 26px 20px 30px;
@@ -4601,6 +4632,20 @@
   text-decoration: underline;
 }
 
+.personal__content-text {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #adadad;
+}
+
+.personal__content-text_red {
+  color: #31ca2d;
+}
+
 @media (max-width: 715px) {
   .personal__content-title {
     font-size: 16px;
@@ -4635,14 +4680,43 @@
   }
 }
 
-.personal__content-text {
-  margin: 0;
+.personal__content-container {
+  padding: 21px 0 0;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 440px) {
+  .personal__content-container {
+    flex-direction: column;
+  }
+}
+
+.personal__content-container-item {
+  width: 160px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 12px 40px rgba(77, 84, 96, 0.08);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.personal__content-item-text {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #adadad;
+  color: #151528;
+}
+
+.personal__content-item-text_big {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .catalog-sec__checkbox_personal-page {
