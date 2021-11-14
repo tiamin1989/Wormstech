@@ -903,30 +903,61 @@
               <div class="personal__action">
                 <div>Изменения сохранены</div>
                 <div>
-                  <input type="reset" name="personal-info" id="personal-info-reset3" value="Отменить" class="personal__action-input">
-                  <input type="submit" name="personal-info" id="personal-info-submit3" value="Сохранить" class="personal__action-input personal__action-input_red">
+                  <input
+                    type="reset"
+                    name="personal-info"
+                    id="personal-info-reset3"
+                    value="Отменить"
+                    class="personal__action-input"
+                  />
+                  <input
+                    type="submit"
+                    name="personal-info"
+                    id="personal-info-submit3"
+                    value="Сохранить"
+                    class="personal__action-input personal__action-input_red"
+                  />
                 </div>
               </div>
             </div>
             <div class="personal__content-item personal__content-item_cashback">
               <h3 class="personal__content-title">Кэшбек</h3>
               <p class="personal__content-text">
-                С каждой покупкой вы получаете <span class="personal__content-text personal__content-text_red">5 &#37; от суммы заказа</span> на ваш счет, и сможете потратить их при следующем заказе.
+                С каждой покупкой вы получаете
+                <span class="personal__content-text personal__content-text_red"
+                  >5 &#37; от суммы заказа</span
+                >
+                на ваш счет, и сможете потратить их при следующем заказе.
               </p>
               <div class="personal__content-container">
                 <div class="personal__content-container-item">
-                  <span class="personal__content-item-text personal__content-item-text_big">1024 &#8381;</span>
+                  <span
+                    class="
+                      personal__content-item-text
+                      personal__content-item-text_big
+                    "
+                    >1024 &#8381;</span
+                  >
                   <span class="personal__content-item-text">Доступно</span>
                 </div>
                 <div class="personal__content-container-item">
-                  <span class="personal__content-item-text personal__content-item-text_big">0 &#8381;</span>
+                  <span
+                    class="
+                      personal__content-item-text
+                      personal__content-item-text_big
+                    "
+                    >0 &#8381;</span
+                  >
                   <span class="personal__content-item-text">Ожидается</span>
                 </div>
               </div>
             </div>
             <div class="personal__content-item personal__content-item_address">
-              <h3 class="personal__content-title">Адреса доставки
-                <span class="personal__content-title-action"><a href="#" title="Добавить адрес">Добавить адрес</a></span>
+              <h3 class="personal__content-title">
+                Адреса доставки
+                <span class="personal__content-title-action"
+                  ><a href="#" title="Добавить адрес">Добавить адрес</a></span
+                >
               </h3>
               Адреса доставки не найдены!
             </div>
@@ -937,14 +968,82 @@
               Подпишитесь и получите промокод на скидку 30%
             </h2>
             <form class="subscribe__form">
-              <input class="subscribe__input" type="text" name="subscribe_input" id="subscribe_input" placeholder="Ваш e-mail / телефон">
-              <input class="subscribe__submit" type="submit" value="Подписаться">
+              <input
+                class="subscribe__input"
+                type="text"
+                name="subscribe_input"
+                id="subscribe_input"
+                placeholder="Ваш e-mail / телефон"
+              />
+              <input
+                class="subscribe__submit"
+                type="submit"
+                value="Подписаться"
+              />
             </form>
           </section>
-
         </div>
         <div class="personal__content" id="content-personal2">tab2</div>
-        <div class="personal__content" id="content-personal3">tab3</div>
+        <div class="personal__content" id="content-personal3">
+          <!-- Common elements: radio-icon block/list toggler _start -->
+          <input
+            class="pb__label-radio"
+            id="pb__label-icon1"
+            type="radio"
+            name="pb__label-icon"
+            checked
+          />
+          <label
+            class="pb__label-icon-label"
+            for="pb__label-icon1"
+            title="Блоки"
+          >
+            <span class="pb__label-icon-img pb__label-icon-img_block"></span>
+          </label>
+          <input
+            class="pb__label-radio"
+            id="pb__label-icon2"
+            type="radio"
+            name="pb__label-icon"
+          />
+          <label
+            class="pb__label-icon-label"
+            for="pb__label-icon2"
+            title="Список"
+          >
+            <span class="pb__label-icon-img pb__label-icon-img_list"></span>
+          </label>
+          <!-- Common elements: radio-icon block/list toggler _end -->
+
+          <div class="personal__buttons">
+            <button class="personal__button personal__button_grey">
+              Очистить список
+            </button>
+            <button class="personal__button personal__button_red">
+              Купить все товары
+            </button>
+          </div>
+
+          <!-- Common elements: product block _start -->
+          <div class="pb__product-wrapper">
+            <img
+              src="./img/products/Image5.png"
+              alt=""
+              class="pb__product-img"
+            />
+            <h3 class="pb__product-title pb__product-title_uppercase">
+              Smart TV Samsung High-Dynamic-Range Imaging
+            </h3>
+            <div class="pb__product-container">
+              <div class="pb__product-buy-wrapper">
+                <span class="pb__product-buy-old-price">55 490 &#8381;</span>
+                <span class="pb__product-buy-price">51 490 &#8381;</span>
+              </div>
+              <button type="submit" class="pb__product-buy-submit"></button>
+            </div>
+          </div>
+          <!-- Common elements: product block _end -->
+        </div>
         <div class="personal__content" id="content-personal4">tab4</div>
       </section>
     </main>
