@@ -717,53 +717,41 @@
         </div>
       </div>
 
-      
 
-      <input type="radio" name="slide-trigger" value="first" id="first" checked />
-<label class="radio" for="first">
-  <span class="outer">
-    <span class="inner"></span>
-  </span>  
-</label>
-<input type="radio" name="slide-trigger" value="second" id="second" />
-<label class="radio" for="second">
-  <span class="outer">
-    <span class="inner"></span>
-  </span>  
-</label>
-<input type="radio" name="slide-trigger" value="third" id="third" />
-<label class="radio" for="third">
-  <span class="outer">
-    <span class="inner"></span>
-  </span>  
-</label>
-<input type="radio" name="slide-trigger" value="fourth" id="fourth" />
-<label class="radio" for="fourth">
-  <span class="outer">
-    <span class="inner"></span>
-  </span>  
-</label>
-<div id="slider">
-  <div id="slider-inner">
-    <div id="first-slide" class="slide">
-      <label for="fourth"><</label>
-        <p>1</p>
-      <label for="second">></label>
-    </div>
-    <div id="second-slide" class="slide">
-      <label for="first"><</label>
-        <p>2</p>
-      <label for="third">></label>
-    </div>
-    <div id="third-slide" class="slide">
-      <label for="second"><</label>
-        <p>3</p>
-      <label for="fourth">></label>
-    </div>
-    <div id="fourth-slide" class="slide">
-      <label for="third"><</label>
-        <p>4</p>
-      <label for="first">></label>
+
+      <div id="slider1" class="csslider infinity">
+  <input type="radio" name="slides" id="slides_1">
+  <input type="radio" name="slides" id="slides_2">
+  <input type="radio" name="slides" checked="checked" id="slides_3">
+  <input type="radio" name="slides" id="slides_4">
+  <input type="radio" name="slides" id="slides_5">
+  <ul>
+    <li>
+      <h1>Slide 1</h1>
+      <p>This is slide 1</p>
+    </li>
+    <li> <img src="1.png"> </li>
+    <li> <img src="2.png"> </li>
+    <li> <img src="3.png"> </li>
+    <li> <img src="4.png"> </li>
+    <li> <img src="5.png"> </li>
+  </ul>
+  <div class="arrows">
+    <label for="slides_1"></label>
+    <label for="slides_2"></label>
+    <label for="slides_3"></label>
+    <label for="slides_4"></label>
+    <label for="slides_5"></label>
+    <label for="slides_1" class="goto-first"></label>
+    <label for="slides_5" class="goto-last"></label>
+  </div>
+  <div class="navigation">
+    <div>
+      <label for="slides_1"></label>
+      <label for="slides_2"></label>
+      <label for="slides_3"></label>
+      <label for="slides_4"></label>
+      <label for="slides_5"></label>
     </div>
   </div>
 </div>
