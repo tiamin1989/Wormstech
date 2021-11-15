@@ -5063,6 +5063,10 @@
   cursor: pointer;
 }
 
+.pb__product-wrapper > a {
+  text-decoration: none;
+}
+
 .pb__product-wrapper:hover {
   box-shadow: 0px 12px 40px 0px #00000012;
 }
@@ -5179,7 +5183,7 @@
   grid-template-columns: 1fr;
 }
 
-#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper {
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a {
   display: grid;
   grid-template-areas: 
   "pb__products-close-heart pb__products-close-heart"
@@ -5188,24 +5192,28 @@
   max-width: unset;
   grid-template-columns: 300px 1fr;
 }
-#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > .pb__product-del {
+
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper {
+  max-width: unset;
+}
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a > .pb__product-del {
   grid-area: pb__products-close-heart;
   position: unset;
   justify-self: end;
 }
-#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > .pb__product-title {
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a > .pb__product-title {
   grid-area: pb__products-title;
   justify-self: start;
 }
-#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > .pb__product-img {
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a > .pb__product-img {
   grid-area: pb__products-img;
   align-self: center;
   height: 100%;
 }
-#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > .pb__product-container {
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a > .pb__product-container {
   grid-area: pb__products-container;
 }
-#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > .pb__product-container > .pb__product-buy-submit {
+#pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a > .pb__product-container > .pb__product-buy-submit {
   margin: 0;
 }
 
@@ -5221,7 +5229,7 @@
   .pb__product-title {
     margin: 0 0 28px;
   }
-  #pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper {
+  #pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a {
     grid-template-columns: 200px 1fr;
   }
 }
@@ -5261,7 +5269,7 @@
     background: url("../img/heart-grey.svg") no-repeat center;
     background-size: 50% 50%;
   }
-  #pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper {
+  #pb__label-icon2:checked ~ .pb__products__list > .pb__product-wrapper > a {
     grid-template-columns: 150px 1fr;
   }
 }
