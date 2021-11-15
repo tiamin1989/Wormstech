@@ -5183,6 +5183,12 @@
  .pb__products__list_swipe {
   grid-auto-columns: calc(25% - 30px);
   grid-auto-flow: column;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+ }
+
+ .pb__products__list_swipe::-webkit-scrollbar {
+  display: none;
  }
 
 #pb__label-icon2:checked ~ .pb__products__list {
