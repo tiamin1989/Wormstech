@@ -5185,6 +5185,7 @@
   grid-auto-flow: column;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
+  overflow-x: scroll;
  }
 
  .pb__products__list_swipe::-webkit-scrollbar {
