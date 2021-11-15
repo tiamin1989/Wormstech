@@ -5045,6 +5045,7 @@
 
 /* Common elements: product block _start */
 .pb__product-wrapper {
+  height: 100%;
   position: relative;
   max-width: 300px;
   max-height: 500px;
@@ -5163,28 +5164,46 @@
   justify-content: center;
 }
 
-@media (max-width: 960px) {
-  .pb__products__list {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .pb__product-title {
-    margin: 10px 0 10px;
-    max-width: 190px;
-  }
-
+@media (max-width: 1200px) {
   .pb__product-buy-submit {
     margin: 0;
     align-self: end;
   }
-
-  .pb__product-wrapper {
-    max-width: 229px;
-    max-height: 383px;
+  .pb__products__list {
+    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-rows: repeat(auto-fill, 390px);
+  }
+  .pb__product-title {
+    margin: 0 0 28px;
   }
 }
 
+@media (max-width: 690px) {
+  .pb__products__list {
+    grid-template-columns: repeat(auto-fill, 135px);
+    grid-template-rows: repeat(auto-fill, 230px);
+  }
+  .pb__product-title {
+    margin: 0 0 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .pb__product-buy-old-price {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .pb__product-buy-price {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .pb__product-buy-submit {
+    width: 32px;
+    height: 32px;
+  }
+  .pb__product-wrapper {
+    padding: 0 8px 16px;
+  }
+}
 /* Common elements: product block _end */
 
 .personal__content-heart {
