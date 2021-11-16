@@ -1672,7 +1672,8 @@
     background-size: 80%;
   }
   .products__arrows {
-    display: none;
+    padding: 0 0 10px;
+    visibility: hidden;
   }
 }
 
@@ -2305,7 +2306,7 @@
 
 @media (max-width: 440px) {
   .products {
-    padding: 0;
+    padding: 0 15px 0;
   }
   .catalog-sec-tools {
     flex-direction: column;
