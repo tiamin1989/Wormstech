@@ -1902,6 +1902,12 @@
   padding: 0;
   display: flex;
   gap: 30px;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+
+.news__list::-webkit-scrollbar {
+  display: none;
 }
 
 .news__list-item {
