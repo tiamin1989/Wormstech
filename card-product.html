@@ -911,7 +911,10 @@
         <h2 class="products__title">С этим товаром так же покупают</h2>
 
         <!-- Common elements: product block _start -->
-        <ul class="pb__products__list pb__products__list_swipe">
+        <ul
+          class="pb__products__list pb__products__list_swipe"
+          id="also-bought"
+        >
           <li class="pb__product-wrapper">
             <a href="#" title="Smart TV Samsung High-Dynamic-Range Imaging">
               <span class="pb__product-del"></span>
@@ -1034,8 +1037,28 @@
         </ul>
         <!-- Common elements: product block _end -->
         <div class="products__arrows">
-          <span class="products__list-prev"></span>
-          <span class="products__list-next"></span>
+          <span
+            class="products__list-prev"
+            onclick="(function(){
+              const pbLst = document.querySelector('#also-bought');
+              pbLst.scroll({
+              top: 0,
+              left: (pbLst.scrollLeft - 350),
+              behavior: 'smooth'
+            });
+            })()"
+          ></span>
+          <span
+            class="products__list-next"
+            onclick="(function(){
+            const pbLst = document.querySelector('#also-bought');
+              pbLst.scroll({
+              top: 0,
+              left: (pbLst.scrollLeft + 350),
+              behavior: 'smooth'
+            });
+            })()"
+          ></span>
         </div>
       </section>
       <section class="subscribe">
@@ -1235,6 +1258,6 @@
     </footer>
     <script src="./js/catalog-menu.js"></script>
     <script src="./js/tabs.js"></script>
-    <script type="module" src="./js/card-product.js"></script>
+    <!-- <script type="module" src="./js/card-product.js"></script> -->
   </body>
 </html>

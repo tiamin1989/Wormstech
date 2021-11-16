@@ -5268,6 +5268,7 @@
   .pb__products__list {
     grid-template-columns: repeat(auto-fill, 230px);
     grid-template-rows: repeat(auto-fill, 390px);
+    gap: 20px;
   }
   .pb__product-title {
     margin: 0 0 28px;
