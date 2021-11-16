@@ -1901,7 +1901,7 @@
   max-width: 1290px;
   margin: 0 auto 0;
   display: flex;
-  padding: 0 20px 30px;
+  padding: 0 0 30px;
   gap: 5px;
   list-style: none;
 }
@@ -1930,7 +1930,7 @@
 
 @media (max-width: 715px) {
   .breadcrumbs {
-    padding: 0 15px 30px;
+    padding: 0 0 30px;
   }
   .breadcrumbs__link {
     font-weight: 400;
@@ -1948,7 +1948,7 @@
   max-width: 1290px;
   margin: 0 auto 0;
   gap: 15px;
-  padding: 20px 20px 32px;
+  padding: 20px 0 32px;
   display: grid;
   grid-template-areas:
     ". a a"
@@ -1977,7 +1977,6 @@
   .catalog-sec__column-left {
     max-width: unset;
     width: unset;
-    padding: 0 32px 0;
   }
   .catalog-sec__filter {
     padding: 0 20px 0;
@@ -2126,7 +2125,7 @@
   grid-area: a;
   display: flex;
   gap: 20vw;
-  padding: 0 35px 0;
+  padding: 0;
 }
 
 .catalog-sec__checkbox-list-show {
