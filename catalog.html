@@ -1086,32 +1086,62 @@
           <h2 class="news__title">Новости и обзоры</h2>
           <a href="#" class="news__blog">Перейти в блог</a>
         </div>
-        <ul class="news__list">
+        <ul class="news__list" id="news">
           <li class="news__list-item">
-            <a href="#" class="news__list-item-link">
+            <a
+              href="#"
+              class="news__list-item-link"
+              title="Обзор Xiaomi Mi Note 10"
+            >
               <img
                 src="./img/news/Image1.png"
-                alt="Новость 1"
+                alt="Обзор Xiaomi Mi Note 10"
+                title="Обзор Xiaomi Mi Note 10"
                 class="news__list-img"
               />
               <h3 class="news__list-title">Обзор Xiaomi Mi Note 10</h3>
             </a>
           </li>
           <li class="news__list-item">
-            <a href="#" class="news__list-item-link">
+            <a
+              href="#"
+              title="Собираем игровой ПК до 70 000"
+              class="news__list-item-link"
+            >
               <img
                 src="./img/news/Image2.png"
-                alt="Новость 2"
+                alt="Собираем игровой ПК до 70 000"
+                title="Собираем игровой ПК до 70 000"
                 class="news__list-img"
               />
               <h3 class="news__list-title">Собираем игровой ПК до 70 000</h3>
             </a>
           </li>
           <li class="news__list-item">
-            <a href="#" class="news__list-item-link">
+            <a
+              href="#"
+              title="Лучшие смартфоны 2020"
+              class="news__list-item-link"
+            >
               <img
                 src="./img/news/Image3.png"
-                alt="Новость 3"
+                alt="Лучшие смартфоны 2020"
+                title="Лучшие смартфоны 2020"
+                class="news__list-img"
+              />
+              <h3 class="news__list-title">Лучшие смартфоны 2020</h3>
+            </a>
+          </li>
+          <li class="news__list-item">
+            <a
+              href="#"
+              title="Лучшие смартфоны 2020"
+              class="news__list-item-link"
+            >
+              <img
+                src="./img/news/Image3.png"
+                alt="Лучшие смартфоны 2020"
+                title="Лучшие смартфоны 2020"
                 class="news__list-img"
               />
               <h3 class="news__list-title">Лучшие смартфоны 2020</h3>
@@ -1119,8 +1149,28 @@
           </li>
         </ul>
         <div class="products__arrows">
-          <span class="products__list-prev"></span>
-          <span class="products__list-next"></span>
+          <span
+            class="products__list-prev"
+            onclick="(function(){
+            const pbLst = document.querySelector('#news');
+              pbLst.scroll({
+              top: 0,
+              left: (pbLst.scrollLeft - 450),
+              behavior: 'smooth'
+            });
+            })()"
+          ></span>
+          <span
+            class="products__list-next"
+            onclick="(function(){
+            const pbLst = document.querySelector('#news');
+              pbLst.scroll({
+              top: 0,
+              left: (pbLst.scrollLeft + 450),
+              behavior: 'smooth'
+            });
+            })()"
+          ></span>
         </div>
       </section>
     </main>
