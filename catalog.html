@@ -700,7 +700,11 @@
             name="sort" 
             id="sort" 
             class="sort__select"
-            onclick="(function(e){
+            onclick="(function(){
+              const pbSelect = document.querySelector('#sort');
+              pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
+            })()"
+            onblur="(function(){
               const pbSelect = document.querySelector('#sort');
               pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
             })()">
