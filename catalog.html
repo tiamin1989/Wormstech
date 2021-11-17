@@ -707,7 +707,11 @@
             onblur="(function(){
               const pbSelect = document.querySelector('#sort');
               pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
-            })()">
+            })()"
+                        onchange="(function(){
+                          const pbSelect = document.querySelector('#sort');
+                          pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
+                        })()">
               <option class="sort__select-item" value="default" selected>Cортировать по умолчанию</option>
               <option class="sort__select-item" value="popular">По популярности</option>
               <option class="sort__select-item" value="price">По цене</option>
