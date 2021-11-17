@@ -681,7 +681,7 @@
       <div class="catalog-sec">
         <div class="catalog-sec-tools">
           <span class="catalog-sec__filter-toggler">Фильтры</span>
-          <ul class="products-sort">
+<!--           <ul class="products-sort">
             <li class="products-sort__item">
               <div class="products-sort__item-wrapper">
                 <h3 class="products-sort__item-title">
@@ -694,7 +694,21 @@
                 </ul>
               </div>
             </li>
-          </ul>
+          </ul> -->
+          <div class="sort">
+            <select 
+            name="sort" 
+            id="sort" 
+            class="sort__select"
+            onclick="(function(e){
+              const pbSelect = document.querySelector('#sort');
+              pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
+            })()">
+              <option class="sort__select-item" value="default" selected>Cортировать по умолчанию</option>
+              <option class="sort__select-item" value="popular">По популярности</option>
+              <option class="sort__select-item" value="price">По цене</option>
+            </select>
+          </div>
         </div>
         <div class="catalog-sec__column-left">
           <ul class="catalog-sec__filter">
