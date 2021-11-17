@@ -1484,7 +1484,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 50px;
-  padding: 50px 0 120px;
+  padding: 50px 10px 120px;
 }
 
 .products__pages-wrapper {
@@ -1591,7 +1591,7 @@
     background-size: 80%;
   }
   .products__arrows {
-    padding: 0 0 10px;
+    padding: 0 5px 10px;
     visibility: hidden;
   }
 }
