@@ -595,13 +595,13 @@
             />
           </div>
           <span title="Поиск" class="header__search-img"></span>
-          <a href="#" title="Избранное" class="header__favorites">
-            <span class="header__favorites-img"></span>
-            <span class="header__favorites-text">Избранное</span>
+          <a href="#" title="Избранное" class="header__icon-button">
+            <span class="header__icon-button-img header__icon-button-img_heart"></span>
+            <span class="header__icon-button-text">Избранное</span>
           </a>
-          <a href="#" title="Корзина" class="header__cart">
-            <span class="header__cart-img"></span>
-            <span class="header__cart-text">Корзина</span>
+          <a href="#" title="Корзина" class="header__icon-button">
+            <span class="header__icon-button-img header__icon-button-img_cart"></span>
+            <span class="header__icon-button-text">Корзина</span>
           </a>
         </div>
       </div>
@@ -875,8 +875,11 @@
               в смартфоне тоже есть.
             </p>
             <div class="tabs__more">
+              <input type="radio" name="more" id="more0" checked>
+              <label class="tabs__more-label" for="more0" id="more0-label">Спрятать</label>
+              <input type="radio" name="more" id="more1">
+              <label class="tabs__more-label" for="more1" id="more1-label">Читать полностью</label>
               <p class="tabs__more-content">Дополнительный текст</p>
-              <p class="tabs__more-more">Читать полностью</p>
             </div>
           </div>
           <div class="tabs__inner tabs__inner_hidden">
@@ -1247,7 +1250,7 @@
       >
     </div>
     <script src="./js/catalog-menu.js"></script>
-    <script src="./js/tabs.js"></script>
+<!--     <script src="./js/tabs.js"></script> -->
     <!-- <script type="module" src="./js/card-product.js"></script> -->
   </body>
 </html>

@@ -595,13 +595,13 @@
             />
           </div>
           <span title="Поиск" class="header__search-img"></span>
-          <a href="#" title="Избранное" class="header__favorites">
-            <span class="header__favorites-img"></span>
-            <span class="header__favorites-text">Избранное</span>
+          <a href="#" title="Избранное" class="header__icon-button">
+            <span class="header__icon-button-img header__icon-button-img_heart"></span>
+            <span class="header__icon-button-text">Избранное</span>
           </a>
-          <a href="#" title="Корзина" class="header__cart">
-            <span class="header__cart-img"></span>
-            <span class="header__cart-text">Корзина</span>
+          <a href="#" title="Корзина" class="header__icon-button">
+            <span class="header__icon-button-img header__icon-button-img_cart"></span>
+            <span class="header__icon-button-text">Корзина</span>
           </a>
         </div>
       </div>
@@ -681,7 +681,7 @@
       <div class="catalog-sec">
         <div class="catalog-sec-tools">
           <span class="catalog-sec__filter-toggler">Фильтры</span>
-          <div class="sort">
+          <div class="sort" id="sort-container">
             <select
               name="sort"
               id="sort"
@@ -689,7 +689,7 @@
               onchange="(function(){
                           const pbSelect = document.querySelector('#sort');
                           pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
-                        })()"
+                        })()"         
             >
               <option class="sort__select-item" value="default" selected>
                 Cортировать по умолчанию
