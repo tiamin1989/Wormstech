@@ -358,6 +358,16 @@
   color: #151528;
 }
 
+@media (max-width: 1200px) {
+  .header__icon-button-img {
+    /* width: 15px;
+    height: 15px; */
+  }
+  .header__icon-button-text {
+    display: none;
+  }
+}
+
 .header__icon-button:hover,
 .header__icon-button:focus {
   -webkit-filter: invert(49%) sepia(83%) saturate(5036%) hue-rotate(337deg) brightness(117%) contrast(105%);
@@ -1583,6 +1593,7 @@
 
 .subscribe__title {
   margin: 0;
+  padding: 0 30px 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
