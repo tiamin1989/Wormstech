@@ -16,8 +16,6 @@
   }
 }
 
-/* Header */
-
 .header {
   background-color: #3d315b;
   padding: 0 16px 0 20px;
@@ -118,10 +116,11 @@
 
 .header__sign {
   display: inline-block;
+  position: relative;
 }
 
 .header__sign,
-.header__sign > a {
+.header__sign > label {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -131,10 +130,44 @@
   color: #fefefe;
   text-decoration: none;
   transition: text-shadow 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.header__sign > a:hover {
+#sign-checkbox-hide-label {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#sign-checkbox-hide-label:hover {
+  filter: drop-shadow(1px 1px 1px #adadad);
+}
+
+.sign-checkbox-hide-img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header__sign > label:hover {
   text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.header__sign > input {
+  display: none;
+}
+
+#sign-checkbox ~ .sign {
+  display: none;
+}
+
+#sign-checkbox:checked ~ .sign {
+  display: block;
+}
+
+#sign-checkbox-hide ~ .sign {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -158,8 +191,9 @@
   }
 
   .header__sign,
-  .header__sign > a {
+  .header__sign > label {
     font-weight: 500;
+    user-select: none;
   }
 }
 
@@ -4289,7 +4323,7 @@
 }
 
 .input:focus {
-  outline: #3d315b 2px solid;
+  outline: #3d315b 3px solid;
 }
 
 .sign__forgotten-wrapper {
