@@ -131,6 +131,10 @@
   text-decoration: none;
   transition: text-shadow 0.2s ease-in-out;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #sign-checkbox-hide-label {
@@ -140,7 +144,10 @@
 }
 
 #sign-checkbox-hide-label:hover {
-  filter: drop-shadow(1px 1px 1px #adadad);
+  -webkit-filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(295deg)
+    brightness(95%) contrast(94%);
+  filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(295deg) brightness(95%)
+    contrast(94%);
 }
 
 .sign-checkbox-hide-img {
@@ -193,6 +200,9 @@
   .header__sign,
   .header__sign > label {
     font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
   }
 }
@@ -200,6 +210,9 @@
 @media (max-width: 790px) {
   .header__top {
     display: none;
+  }
+  .header__top .sign {
+    display: block;
   }
 }
 
@@ -2930,12 +2943,12 @@
 }
 
 .catalog__items-wrapper {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #b2b1b5;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
   text-decoration: none;
   cursor: pointer;
   display: flex;
@@ -2963,12 +2976,12 @@
 }
 
 .more__label {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #b2b1b5;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2983,12 +2996,12 @@
 .more__content {
   display: none;
   padding: 0 0 10px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
-  color: #b2b1b5;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
   text-decoration: none;
 }
 
