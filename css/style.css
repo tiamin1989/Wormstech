@@ -503,6 +503,7 @@
 .footer__container {
   display: flex;
   overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .footer__container::-webkit-scrollbar {
