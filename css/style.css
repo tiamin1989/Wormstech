@@ -1410,13 +1410,14 @@
 
 .products {
   margin: 0 auto 0;
-  max-width: 1290px;
+  max-width: 1350px;
   padding: 0;
   overflow-x: hidden;
 }
 
 .products__title {
   margin: 0 auto 50px 0;
+  padding: 0 30px 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -1554,7 +1555,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 50px;
-  padding: 50px 10px 120px;
+  padding: 50px 30px 120px;
 }
 
 .products__pages-wrapper {
@@ -5191,6 +5192,7 @@
   overflow-x: scroll;
   justify-content: space-between;
   grid-auto-flow: column;
+  padding: 30px;
 }
 
 .pb__products__list > .pb__product-wrapper {
