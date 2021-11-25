@@ -1285,6 +1285,7 @@
   letter-spacing: 0.005em;
   margin: 0;
   max-width: 375px;
+  color: #333333;
 }
 
 @-webkit-keyframes fade {
