@@ -1513,7 +1513,7 @@
               onchange="(function(){
                           const pbSelect = document.querySelector('#sort');
                           pbSelect.style.width = `${pbSelect.options[pbSelect.selectedIndex].text.length * 10}px`;
-                        })()"         
+                        })()"
             >
               <option class="sort__select-item" value="default" selected>
                 Cортировать по умолчанию
@@ -1605,28 +1605,76 @@
                   <div class="catalog-sec__more-content">
                     <div class="catalog-sec__checkbox-list">
                       <div class="catalog-sec__checkbox">
-                        <input type="checkbox" class="catalog-sec__checkbox-input" id="checkbox_7">
-                        <label class="catalog-sec__checkbox-label" for="checkbox_7">OnePlus</label>
+                        <input
+                          type="checkbox"
+                          class="catalog-sec__checkbox-input"
+                          id="checkbox_7"
+                        />
+                        <label
+                          class="catalog-sec__checkbox-label"
+                          for="checkbox_7"
+                          >OnePlus</label
+                        >
                       </div>
                       <div class="catalog-sec__checkbox">
-                        <input type="checkbox" class="catalog-sec__checkbox-input" id="checkbox_8">
-                        <label class="catalog-sec__checkbox-label" for="checkbox_8">Oppo</label>
+                        <input
+                          type="checkbox"
+                          class="catalog-sec__checkbox-input"
+                          id="checkbox_8"
+                        />
+                        <label
+                          class="catalog-sec__checkbox-label"
+                          for="checkbox_8"
+                          >Oppo</label
+                        >
                       </div>
                       <div class="catalog-sec__checkbox">
-                        <input type="checkbox" class="catalog-sec__checkbox-input" id="checkbox_9">
-                        <label class="catalog-sec__checkbox-label" for="checkbox_9">Poco</label>
+                        <input
+                          type="checkbox"
+                          class="catalog-sec__checkbox-input"
+                          id="checkbox_9"
+                        />
+                        <label
+                          class="catalog-sec__checkbox-label"
+                          for="checkbox_9"
+                          >Poco</label
+                        >
                       </div>
                       <div class="catalog-sec__checkbox">
-                        <input type="checkbox" class="catalog-sec__checkbox-input" id="checkbox_10">
-                        <label class="catalog-sec__checkbox-label" for="checkbox_10">Realme</label>
+                        <input
+                          type="checkbox"
+                          class="catalog-sec__checkbox-input"
+                          id="checkbox_10"
+                        />
+                        <label
+                          class="catalog-sec__checkbox-label"
+                          for="checkbox_10"
+                          >Realme</label
+                        >
                       </div>
                       <div class="catalog-sec__checkbox">
-                        <input type="checkbox" class="catalog-sec__checkbox-input" id="checkbox_11">
-                        <label class="catalog-sec__checkbox-label" for="checkbox_11">Vivo</label>
+                        <input
+                          type="checkbox"
+                          class="catalog-sec__checkbox-input"
+                          id="checkbox_11"
+                        />
+                        <label
+                          class="catalog-sec__checkbox-label"
+                          for="checkbox_11"
+                          >Vivo</label
+                        >
                       </div>
                       <div class="catalog-sec__checkbox">
-                        <input type="checkbox" class="catalog-sec__checkbox-input" id="checkbox_12">
-                        <label class="catalog-sec__checkbox-label" for="checkbox_12">Alcatel</label>
+                        <input
+                          type="checkbox"
+                          class="catalog-sec__checkbox-input"
+                          id="checkbox_12"
+                        />
+                        <label
+                          class="catalog-sec__checkbox-label"
+                          for="checkbox_12"
+                          >Alcatel</label
+                        >
                       </div>
                     </div>
                   </div>
@@ -1654,32 +1702,62 @@
                     type="text"
                     id="lower-text"
                     placeholder="от"
+                    value="5390"
                   />
                   <input
                     class="catalog-sec__prices-input"
                     type="text"
                     id="upper-text"
                     placeholder="до"
+                    max="75890"
                   />
                 </div>
-                <div class="multi-range">
-                  <input
-                    type="range"
-                    min="5390"
-                    max="75890"
-                    value="5390"
-                    step="1"
-                    id="lower"
-                  />
-                  <input
-                    type="range"
-                    min="5390"
-                    max="75890"
-                    value="75890"
-                    step="1"
-                    id="upper"
-                  />
-                </div>
+              </div>
+              <div class="catalog-range">
+                <input
+                  type="range"
+                  min="5390"
+                  max="75890"
+                  value="5390"
+                  step="1"
+                  id="low-input"
+                  class="catalog-range__low"
+                  oninput="
+                    const upInput = document.querySelector('#up-input');
+                    const lowText = document.querySelector('#lower-text');
+                    const upText = document.querySelector('#upper-text');
+                    const lowInput = document.querySelector('#low-input');
+                    if (this.value <= upInput.value) {
+                      lowText.value = this.value;
+                    } else {
+                      upInput.value = this.value;
+                      upText.value = this.value;
+                      lowText.value = this.value;
+                    }
+                  "
+                />
+                <input
+                  type="range"
+                  min="5390"
+                  max="75890"
+                  value="75890"
+                  step="1"
+                  id="up-input"
+                  class="catalog-range__up"
+                  oninput="
+                    const upInput = document.querySelector('#up-input');
+                    const lowText = document.querySelector('#lower-text');
+                    const upText = document.querySelector('#upper-text');
+                    const lowInput = document.querySelector('#low-input');
+                    if (this.value >= lowInput.value) {
+                      upText.value = this.value;
+                    } else {
+                      lowInput.value = this.value;
+                      lowText.value = this.value;
+                      upText.value = this.value;
+                    }
+                  "
+                />
               </div>
             </li>
             <li class="catalog-sec__filter-item">
@@ -1716,15 +1794,10 @@
                   </h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="Наушники Apple AirPods Charging Case">
@@ -1739,15 +1812,10 @@
                   </h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a
@@ -1767,15 +1835,10 @@
                   </h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="">
@@ -1788,15 +1851,10 @@
                   <h3 class="pb__product-title">Смарт-часы Amazfit Bip S</h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="Смарт-часы Amazfit Bip S">
@@ -1809,15 +1867,10 @@
                   <h3 class="pb__product-title">Смарт-часы Amazfit Bip S</h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="Смарт-часы Amazfit Bip S">
@@ -1830,15 +1883,10 @@
                   <h3 class="pb__product-title">Смарт-часы Amazfit Bip S</h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="Смарт-часы Amazfit Bip S">
@@ -1851,15 +1899,10 @@
                   <h3 class="pb__product-title">Смарт-часы Amazfit Bip S</h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="Смарт-часы Amazfit Bip S">
@@ -1872,15 +1915,10 @@
                   <h3 class="pb__product-title">Смарт-часы Amazfit Bip S</h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
               <li class="pb__product-wrapper">
                 <a href="#" title="Смарт-часы Amazfit Bip S">
@@ -1893,15 +1931,10 @@
                   <h3 class="pb__product-title">Смарт-часы Amazfit Bip S</h3>
                 </a>
                 <div class="pb__product-buy-wrapper">
-                  <span class="pb__product-buy-old-price"
-                    >55 490 &#8381;</span
-                  >
+                  <span class="pb__product-buy-old-price">55 490 &#8381;</span>
                   <span class="pb__product-buy-price">51 490 &#8381;</span>
                 </div>
-                <button
-                  type="submit"
-                  class="pb__product-buy-submit"
-                ></button>
+                <button type="submit" class="pb__product-buy-submit"></button>
               </li>
             </ul>
             <!-- Common elements: product block _end -->
@@ -2160,7 +2193,7 @@
     </div>
     <script src="./js/catalog-menu.js"></script>
     <script type="module" src="./js/filter-tab.js"></script>
-    <script type="module" src="./js/filter.js"></script>
+<!--     <script type="module" src="./js/filter.js"></script> -->
     <script type="module" src="./js/catalog.js"></script>
   </body>
 </html>
