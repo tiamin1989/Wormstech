@@ -1712,52 +1712,52 @@
                     max="75890"
                   />
                 </div>
-              </div>
-              <div class="catalog-range">
-                <input
-                  type="range"
-                  min="5390"
-                  max="75890"
-                  value="5390"
-                  step="1"
-                  id="low-input"
-                  class="catalog-range__low"
-                  oninput="
-                    const upInput = document.querySelector('#up-input');
-                    const lowInput = document.querySelector('#low-input');
-                    const upText = document.querySelector('#upper-text');
-                    const lowText = document.querySelector('#lower-text');
-                    if (this.value < upInput.value) {
-                      lowText.value = this.value;
-                    } else {
-                      upInput.value = this.value;
-                      upText.value = this.value;
-                      lowText.value = this.value;
-                    }
-                  "
-                />
-                <input
-                  type="range"
-                  min="5390"
-                  max="75890"
-                  value="75890"
-                  step="1"
-                  id="up-input"
-                  class="catalog-range__up"
-                  oninput="
-                    const upInput = document.querySelector('#up-input');
-                    const lowInput = document.querySelector('#low-input');
-                    const upText = document.querySelector('#upper-text');
-                    const lowText = document.querySelector('#lower-text');
-                    if (this.value > lowInput.value) {
-                      upText.value = this.value;
-                    } else {
-                      lowInput.value = this.value;
-                      lowText.value = this.value;
-                      upText.value = this.value;
-                    }
-                  "
-                />
+                <div class="catalog-range">
+                  <input
+                    type="range"
+                    min="5390"
+                    max="75890"
+                    value="5390"
+                    step="1"
+                    id="low-input"
+                    class="catalog-range__low"
+                    oninput="
+                      const upInput = document.querySelector('#up-input');
+                      const lowInput = document.querySelector('#low-input');
+                      const upText = document.querySelector('#upper-text');
+                      const lowText = document.querySelector('#lower-text');
+                      if (this.value < upInput.value) {
+                        lowText.value = this.value;
+                      } else {
+                        upInput.value = this.value;
+                        upText.value = this.value;
+                        lowText.value = this.value;
+                      }
+                    "
+                  />
+                  <input
+                    type="range"
+                    min="5390"
+                    max="75890"
+                    value="75890"
+                    step="1"
+                    id="up-input"
+                    class="catalog-range__up"
+                    oninput="
+                      const upInput = document.querySelector('#up-input');
+                      const lowInput = document.querySelector('#low-input');
+                      const upText = document.querySelector('#upper-text');
+                      const lowText = document.querySelector('#lower-text');
+                      if (this.value > lowInput.value) {
+                        upText.value = this.value;
+                      } else {
+                        lowInput.value = this.value;
+                        lowText.value = this.value;
+                        upText.value = this.value;
+                      }
+                    "
+                  />
+                </div>
               </div>
             </li>
             <li class="catalog-sec__filter-item">
@@ -2193,7 +2193,7 @@
     </div>
     <script src="./js/catalog-menu.js"></script>
     <script type="module" src="./js/filter-tab.js"></script>
-<!--     <script type="module" src="./js/filter.js"></script> -->
+    <script type="module" src="./js/filter.js"></script>
     <script type="module" src="./js/catalog.js"></script>
   </body>
 </html>
