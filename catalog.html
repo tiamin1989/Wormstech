@@ -1528,10 +1528,11 @@
         <div class="catalog-sec__column-left">
           <ul class="catalog-sec__filter">
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title" id="smarts">
+              <input type="checkbox" name="" id="smarts">
+              <label class="catalog-sec__title" for="smarts">
                 Модель смартфона<span class="catalog-sec__title-arrow"></span>
-              </h3>
-              <div class="catalog-sec__checkbox-list">
+              </label>
+              <div id="smarts-container" class="catalog-sec__checkbox-list">
                 <div class="catalog-sec__checkbox">
                   <input
                     type="checkbox"
@@ -1692,10 +1693,11 @@
               </div>
             </li>
             <li class="catalog-sec__filter-item">
-              <h3 class="catalog-sec__title" id="price">
+              <input type="checkbox" name="" id="price">
+              <label class="catalog-sec__title" for="price">
                 Цена<span class="catalog-sec__title-arrow"></span>
-              </h3>
-              <div class="catalog-sec__prices-wrapper">
+              </label>
+              <div class="catalog-sec__prices-wrapper" id="price-container">
                 <div class="catalog-sec__prices">
                   <input
                     class="catalog-sec__prices-input"
@@ -2192,8 +2194,8 @@
       >
     </div>
     <script src="./js/catalog-menu.js"></script>
-    <script type="module" src="./js/filter-tab.js"></script>
-    <script type="module" src="./js/filter.js"></script>
+<!--     <script type="module" src="./js/filter-tab.js"></script>
+    <script type="module" src="./js/filter.js"></script> -->
     <script type="module" src="./js/catalog.js"></script>
   </body>
 </html>

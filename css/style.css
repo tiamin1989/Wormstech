@@ -2094,8 +2094,10 @@
   background: url("../img/filter-arrow.svg") no-repeat center;
 }
 
+
+
 .catalog-sec__checkbox-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 10px;
   overflow: hidden;
@@ -2345,6 +2347,10 @@
   line-height: inherit;
   color: inherit;
   text-decoration: none;
+}
+
+.catalog-sec__more-content > .catalog-sec__checkbox-list {
+  display: flex;
 }
 
 .catalog-sec__more-input:checked + .catalog-sec__more-label {
@@ -5577,4 +5583,36 @@
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+.catalog-sec__filter-item > input {
+  display: none;
+}
+
+#smarts:checked ~ #smarts-container {
+  display: flex;
+}
+
+#smarts ~ .catalog-sec__title > .catalog-sec__title-arrow {
+  transform: rotate(180deg);
+}
+
+#smarts:checked ~ .catalog-sec__title > .catalog-sec__title-arrow {
+  transform: rotate(0deg);
+}
+
+#price ~ #price-container {
+  display: none;
+}
+
+#price:checked ~ #price-container {
+  display: block;
+}
+
+#price ~ .catalog-sec__title > .catalog-sec__title-arrow {
+  transform: rotate(180deg);
+}
+
+#price:checked ~ .catalog-sec__title > .catalog-sec__title-arrow {
+  transform: rotate(0deg);
 }
