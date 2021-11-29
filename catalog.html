@@ -1721,12 +1721,12 @@
                     step="1"
                     id="low-input"
                     class="catalog-range__low"
-                    oninput="
+                    onchange="
                       const upInput = document.querySelector('#up-input');
                       const lowInput = document.querySelector('#low-input');
                       const upText = document.querySelector('#upper-text');
                       const lowText = document.querySelector('#lower-text');
-                      if (this.value < upInput.value) {
+                      if (this.value <= upText.value) {
                         lowText.value = this.value;
                       } else {
                         upInput.value = this.value;
@@ -1738,17 +1738,17 @@
                   <input
                     type="range"
                     min="5390"
-                    max="75890"
+                    max="75891"
                     value="75890"
                     step="1"
                     id="up-input"
                     class="catalog-range__up"
-                    oninput="
+                    onchange="
                       const upInput = document.querySelector('#up-input');
                       const lowInput = document.querySelector('#low-input');
                       const upText = document.querySelector('#upper-text');
                       const lowText = document.querySelector('#lower-text');
-                      if (this.value > lowInput.value) {
+                      if (this.value >= lowText.value) {
                         upText.value = this.value;
                       } else {
                         lowInput.value = this.value;

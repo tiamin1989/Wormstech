@@ -23,3 +23,40 @@ const priceTab = new filterTab(
     .parentElement.querySelector(".catalog-sec__title-arrow")
 );
 priceTab.init();
+
+
+/* 
+
+                    oninput="
+                      const upInput = document.querySelector('#up-input');
+                      const lowInput = document.querySelector('#low-input');
+                      const upText = document.querySelector('#upper-text');
+                      const lowText = document.querySelector('#lower-text');
+                      if (this.value < upInput.value) {
+                        lowText.value = this.value;
+                      } else {
+                        upInput.value = this.value;
+                        upText.value = this.value;
+                        lowText.value = this.value;
+                      }
+                    "
+
+*/
+
+/* 
+
+                    oninput="
+                      const upInput = document.querySelector('#up-input');
+                      const lowInput = document.querySelector('#low-input');
+                      const upText = document.querySelector('#upper-text');
+                      const lowText = document.querySelector('#lower-text');
+                      if (this.value > lowInput.value) {
+                        upText.value = this.value;
+                      } else {
+                        lowInput.value = this.value;
+                        lowText.value = this.value;
+                        upText.value = this.value;
+                      }
+                    "
+
+*/
