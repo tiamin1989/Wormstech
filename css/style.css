@@ -2433,7 +2433,7 @@
 }
 
 .card__title {
-  margin: 0;
+  margin: 30px 0 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -5538,7 +5538,9 @@
   max-width: 190px;
   width: 100%;
   background: linear-gradient(#3d315b, #3d315b) no-repeat center;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-size: 100% 6px;
 }
 
