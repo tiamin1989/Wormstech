@@ -1540,44 +1540,44 @@
           <div class="product-card">
             <ul class="product-card__list">
               <li class="product-card__item">
-                <div
-                  class="
-                    product-card__item-choose product-card__item-choose_active
-                  "
-                >
+                <input type="radio" name="prod-img" id="prod-img1" checked>
+                <label class="product-card__item-choose" for="prod-img1">
                   <img
                     src="./img/products/Image5.png"
                     alt="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
                     class="product-card__item-choose-img"
                   />
-                </div>
+                </label>
               </li>
               <li class="product-card__item">
-                <div class="product-card__item-choose">
+                <input type="radio" name="prod-img" id="prod-img2">
+                <label class="product-card__item-choose" for="prod-img2">
                   <img
                     src="./img/products/Image5.png"
                     alt="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
                     class="product-card__item-choose-img"
                   />
-                </div>
+                </label>
               </li>
               <li class="product-card__item">
-                <div class="product-card__item-choose">
+                <input type="radio" name="prod-img" id="prod-img3">
+                <label class="product-card__item-choose" for="prod-img3">
                   <img
                     src="./img/products/Image5.png"
                     alt="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
                     class="product-card__item-choose-img"
                   />
-                </div>
+                </label>
               </li>
               <li class="product-card__item">
-                <div class="product-card__item-choose">
+                <input type="radio" name="prod-img" id="prod-img4">
+                <label class="product-card__item-choose" for="prod-img4">
                   <img
                     src="./img/products/Image5.png"
                     alt="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
                     class="product-card__item-choose-img"
                   />
-                </div>
+                </label>
               </li>
             </ul>
             <img
@@ -1663,7 +1663,14 @@
                 <td class="card__table-td">16 Мпикс</td>
               </tr>
             </table>
-            <a href="#" class="card__table-show">Все характеристики</a>
+            <input type="checkbox" name="specs" id="specs">
+            <label class="card__table-show" for="specs" id="specs-label">Все характеристики</label>
+            <table class="card__table card__table_hidden">
+              <tr class="card__table-tr">
+                <td class="card__table-td">Другая характеристика:</td>
+                <td class="card__table-td">2340x1080</td>
+              </tr>
+            </table>
           </div>
           <div class="card__buy">
             <div class="card__price">
@@ -1676,64 +1683,64 @@
           </div>
         </div>
 
+        <input class="tab-input" type="radio" name="tabs" id="tab1" checked>
+        <input class="tab-input" type="radio" name="tabs" id="tab2">
+        <input class="tab-input" type="radio" name="tabs" id="tab3">
+        <input class="tab-input" type="radio" name="tabs" id="tab4">
+
         <div class="tabs">
-          <ul class="tabs__list">
-            <li class="tabs__list-item tabs__list-item_active">Описание</li>
-            <li class="tabs__list-item">Характеристики</li>
-            <li class="tabs__list-item">Отзывы</li>
-            <li class="tabs__list-item">Вопросы</li>
-          </ul>
-          <div class="tabs__inner">
-            <p class="tabs__description">
-              Mi Note 10 – это своеобразный юбилей популярной линейки смартфонов
-              от Xiaomi. Неудивительно, что в этот раз решили постараться
-              особенно. Смартфон получил большой экран, мощный процессор, а
-              также невероятную 108-Мегапиксельную камеру и много других
-              приятных особенностей.
-            </p>
-            <p class="tabs__description">
-              Корпус Mi Note 10 изготовлен из прочного стекла Gorilla Glass c
-              эффектом перелива. Такое же стекло защищает и дисплей смартфона.
-              Под большим AMOLED дисплеем расположился быстрый сканер отпечатка,
-              его скорость точно оценят любители бесконтактных платежей. Да, NFC
-              в смартфоне тоже есть.
-            </p>
-            <div class="tabs__more">
-              <input type="radio" name="more" id="more0" checked>
-              <label class="tabs__more-label" for="more0" id="more0-label">Спрятать</label>
-              <input type="radio" name="more" id="more1">
-              <label class="tabs__more-label" for="more1" id="more1-label">Читать полностью</label>
-              <p class="tabs__more-content">Дополнительный текст</p>
-            </div>
-          </div>
-          <div class="tabs__inner tabs__inner_hidden">
-            <p class="tabs__description">
-              The HyperText Markup Language, or HTML(HyperText Markup Language)
-              is the standard markup language for documents designed to be
-              displayed in a web browser. It can be assisted by technologies
-              such as Cascading Style Sheets (CSS) and scripting languages such
-              as JavaScript.
-            </p>
-          </div>
-          <div class="tabs__inner tabs__inner_hidden">
-            <p class="tabs__description">
-              Cascading Style Sheets (CSS) is a style sheet language used for
-              describing the presentation of a document written in a markup
-              language such as HTML. CSS is a cornerstone technology of the
-              World Wide Web, alongside HTML and JavaScript.
-            </p>
-          </div>
-          <div class="tabs__inner tabs__inner_hidden">
-            <p class="tabs__description">
-              JavaScript, often abbreviated as JS, is a programming language
-              that conforms to the ECMAScript specification. JavaScript is
-              high-level, often just-in-time compiled and multi-paradigm. It has
-              dynamic typing, prototype-based object-orientation and first-class
-              functions.
-            </p>
+          <label for="tab1" class="tabs__item" id="tab1-label">
+            Описание
+          </label>
+          <label for="tab2" class="tabs__item" id="tab2-label">
+            Характеристики
+          </label>
+          <label for="tab3" class="tabs__item" id="tab3-label">
+            Отзывы
+          </label>
+          <label for="tab4" class="tabs__item" id="tab4-label">
+            Вопросы
+          </label>
+        </div>
+
+        <div class="tabs__inner" id="tab1-description">
+          <p class="tabs__description">
+            Mi Note 10 – это своеобразный юбилей популярной линейки смартфонов
+            от Xiaomi. Неудивительно, что в этот раз решили постараться
+            особенно. Смартфон получил большой экран, мощный процессор, а
+            также невероятную 108-Мегапиксельную камеру и много других
+            приятных особенностей.
+          </p>
+          <p class="tabs__description">
+            Корпус Mi Note 10 изготовлен из прочного стекла Gorilla Glass c
+            эффектом перелива. Такое же стекло защищает и дисплей смартфона.
+            Под большим AMOLED дисплеем расположился быстрый сканер отпечатка,
+            его скорость точно оценят любители бесконтактных платежей. Да, NFC
+            в смартфоне тоже есть.
+          </p>
+          <div class="tabs__more">
+            <input type="radio" name="more" id="more0" checked>
+            <label class="tabs__more-label" for="more0" id="more0-label">Спрятать</label>
+            <input type="radio" name="more" id="more1">
+            <label class="tabs__more-label" for="more1" id="more1-label">Читать полностью</label>
+            <p class="tabs__more-content">Дополнительный текст</p>
           </div>
         </div>
+
+        <div class="tabs__inner" id="tab2-description">
+
+        </div>
+
+        <div class="tabs__inner" id="tab3-description">
+
+        </div>
+
+        <div class="tabs__inner" id="tab4-description">
+
+        </div>
+
       </section>
+
       <section class="products">
         <h2 class="products__title">С этим товаром также покупают</h2>
         <!-- Common elements: product block _start -->
@@ -2105,7 +2112,5 @@
       >
     </div>
     <script src="./js/catalog-menu.js"></script>
-<!--     <script src="./js/tabs.js"></script> -->
-    <!-- <script type="module" src="./js/card-product.js"></script> -->
   </body>
 </html>
