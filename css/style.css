@@ -2905,6 +2905,7 @@
   color: #adadad;
   cursor: pointer;
   border-bottom: 3px solid transparent;
+  user-select: none;
 }
 
 .tabs__item:hover {
