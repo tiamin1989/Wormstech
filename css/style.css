@@ -382,6 +382,7 @@
   justify-content: center;
   gap: 12px;
   text-decoration: none;
+  position: relative;
 }
 
 .header__icon-button:first-of-type {
@@ -429,6 +430,27 @@
   font-size: 16px;
   line-height: 20px;
   color: #151528;
+}
+
+.header__icon-button-text-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #FE4A49;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #fefefe;
+  position: absolute;
+  top: -4px;
+  left: 14px;
+  border-radius: 50%;
 }
 
 @media (max-width: 1200px) {
