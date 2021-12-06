@@ -2948,7 +2948,10 @@
   color: #adadad;
   cursor: pointer;
   border-bottom: 3px solid transparent;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .tabs__item:hover {
@@ -3808,17 +3811,18 @@
     "left left right";
   max-width: 1290px;
   margin: 0 auto 0;
-  padding: 0 20px 120px;
+  padding: 30px 0 120px;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .order {
     grid-template-areas:
       "title"
       "left"
       "right";
+    padding: 40px 0 120px;
   }
-}
+} */
 
 .order__title {
   grid-area: title;
@@ -4231,19 +4235,73 @@
 .order__person-agree {
   padding: 10px 0 0;
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.order__person-agree-label {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #adadad;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+.order__person-agree-label::before {
+  content: "";
+  height: 9px;
+  width: 9px;
+  border: 2px solid #e6e6e8;
+  border-radius: 3px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.order__person-agree-label::after {
+  height: 12px;
+  width: 12px;
+  background: url("../img/checkbox.svg") no-repeat center #3d315b;
+  border-radius: 3px;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.order__person-agree-input {
+  height: 12px;
+  width: 12px;
+  opacity: 0;
+}
+
+.order__person-agree-input + .order__person-agree-label::after {
+  content: none;
+}
+
+.order__person-agree-input:checked + .order__person-agree-label::after {
+  content: "";
+}
+
+/* .order__person-agree-input:checked + .order__person-agree-label {
+  font-weight: 600;
+  line-height: 22px;
+} */
 
 @media (max-width: 1200px) {
   .order {
-    padding: 0 20px 80px;
+    grid-template-areas:
+      "title"
+      "left"
+      "right";
+    padding: 40px 0 120px;
   }
 
   .discount_order-page {
@@ -4269,6 +4327,9 @@
   }
   .order__person-column {
     max-width: unset;
+  }
+  .order {
+    padding: 40px 0 40px;
   }
 }
 

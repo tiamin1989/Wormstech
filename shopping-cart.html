@@ -1475,104 +1475,310 @@
           class="breadcrumbs__item"
         >
           <a href="#" title="Корзина" itemprop="item" class="breadcrumbs__link">
+            <span itemprop="name" class="breadcrumbs__link-text">Корзина</span>
+            <meta itemprop="position" content="2" />
+          </a>
+        </li>
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          class="breadcrumbs__item"
+        >
+          <a
+            href="#"
+            title="Оформление заказа"
+            itemprop="item"
+            class="breadcrumbs__link"
+          >
             <span
               itemprop="name"
               class="breadcrumbs__link-text breadcrumbs__link-text_highlight"
-              >Корзина</span
+              >Оформление заказа</span
             >
             <meta itemprop="position" content="2" />
           </a>
         </li>
       </ul>
 
-      <section class="shop-cart">
-        <div class="shop-cart__title-wrapper">
-          <h2 class="shop-cart__title">Корзина</h2>
-          <a
-            href="#"
-            title="Вернуться к покупкам"
-            class="shop-cart__action-text shop-cart__action-text_back-to-buy"
-            >Вернуться к покупкам</a
-          >
-          <a
-            href="#"
-            title="Очистить корзину"
-            class="shop-cart__action-text shop-cart__action-text_clear-cart"
-            >Очистить корзину</a
-          >
-        </div>
-        <div class="shop-cart__column-left">
-          <div class="shop-cart__product">
+      <div class="order">
+        <h1 class="order__title">Оформление заказа</h1>
+        <div class="order__column-left">
+          <h2 class="order__description">Ваш заказ</h2>
+          <div class="order__product">
             <img
               src="./img/products/Image5.png"
-              alt="Xiaomi Mi Note 10 Lite 6/128GB"
-              class="shop-cart-img"
+              alt="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
+              class="order__product-img"
             />
-            <h3 class="shop-cart__product-title">
-              <a href="#" title="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
+            <h3 class="order__product-title">
+              <a href="" title="Смартфон Xiaomi Mi Note 10 Lite 6/128GB"
                 >Смартфон Xiaomi Mi Note 10 Lite 6/128GB</a
               >
             </h3>
-            <ul class="card__actions card__actions_cart">
-              <li class="card__actions-item">
-                <span class="card__actions-item_heart"></span>
-                В избранное
-              </li>
-            </ul>
-            <div class="shop-cart__counter">
-              <span class="shop-cart__counter-minus"></span>
-              <span class="shop-cart__counter-value">1</span>
-              <span class="shop-cart__counter-plus"></span>
-            </div>
-            <span class="shop-cart__price">29990 ₽</span>
-            <span class="shop-cart__old-price">32990 ₽</span>
-            <a
-              href="#"
-              title="Удалить"
-              class="shop-cart__action-text shop-cart__action-text_delete"
-              >Удалить</a
-            >
+            <span class="order__product-price">29990 &#8381;</span>
           </div>
-          <div class="shop-cart__product">
+          <div class="order__product">
             <img
               src="./img/products/Image4.png"
-              alt="Xiaomi Mi Note 10 Lite 6/128GB"
-              class="shop-cart-img"
+              alt="Ноутбук ACER Aspire 7IPS, Intel Core i78ГБ, 512ГБ SSD, NVIDIA GeForce GTX"
+              class="order__product-img"
             />
-            <h3 class="shop-cart__product-title">
-              <a
-                href="#"
-                title="Ноутбук ACER Aspire 7IPS, Intel Core i7 8ГБ, 512ГБ SSD, NVIDIA GeForce GTX"
-                >Ноутбук ACER Aspire 7IPS, Intel Core i7 8ГБ, 512ГБ SSD, NVIDIA
-                GeForce GTX</a
+            <h3 class="order__product-title">
+              <a href="" title="Ноутбук ACER Aspire 7IPS, Intel Core i78ГБ, 512ГБ SSD, NVIDIA GeForce GTX"
+                >Ноутбук ACER Aspire 7IPS, Intel Core i78ГБ, 512ГБ SSD, NVIDIA GeForce GTX</a
               >
             </h3>
-            <ul class="card__actions card__actions_cart">
-              <li class="card__actions-item">
-                <span class="card__actions-item_heart"></span>
-                В избранное
-              </li>
-            </ul>
-            <div class="shop-cart__counter">
-              <span class="shop-cart__counter-minus"></span>
-              <span class="shop-cart__counter-value">1</span>
-              <span class="shop-cart__counter-plus"></span>
+            <span class="order__product-price">29990 &#8381;</span>
+          </div>
+          <div class="order__delivery-wrapper">
+            <h2 class="order__sub-title">Способ доставки</h2>
+
+            <input
+              class="order__radio"
+              type="radio"
+              name="delivery"
+              id="delivery1"
+            />
+            <label class="order__label" for="delivery1"
+              >Согласовать с менеджером
+              <span class="order__delivery-price">0 &#8381;</span>
+            </label>
+
+            <input
+              class="order__radio"
+              type="radio"
+              name="delivery"
+              id="delivery2"
+            />
+            <label class="order__label" for="delivery2"
+              >Доставка СДЭК (Доставка курьером)
+              <span class="order__delivery-price">0 &#8381;</span>
+            </label>
+
+            <input
+              class="order__radio"
+              type="radio"
+              name="delivery"
+              id="delivery3"
+              checked
+            />
+            <label class="order__label" for="delivery3"
+              >Доставка СДЭК (Самовывоз)
+              <span class="order__delivery-price">125 &#8381;</span>
+            </label>
+
+            <input
+              class="order__radio"
+              type="radio"
+              name="delivery"
+              id="delivery4"
+            />
+            <label class="order__label" for="delivery4"
+              >Доставка СДЭК по РФ
+              <span class="order__delivery-price">0 &#8381;</span>
+            </label>
+
+            <div class="order__delivery-content" id="delivery-content1">
+              Radio1 Contents
             </div>
-            <span class="shop-cart__price">73390 ₽</span>
-            <span class="shop-cart__old-price">72490 ₽</span>
-            <a
-              href="#"
-              title="Удалить"
-              class="shop-cart__action-text shop-cart__action-text_delete"
-              >Удалить</a
-            >
+            <div class="order__delivery-content" id="delivery-content2">
+              Radio2 Contents
+            </div>
+            <div class="order__delivery-content" id="delivery-content3">
+              <div class="order__delivery-pickup">
+                <span class="order__delivery-pickup-text"
+                  >Доставка СДЭК (Самовывоз)</span
+                >
+                <span class="order__delivery-pickup-text"
+                  >Доставка заказа в один из пунктов самовывоза компании
+                  СДЭК</span
+                >
+                <span class="order__delivery-pickup-text"
+                  >Стоимость: 125 ₽</span
+                >
+                <span class="order__delivery-pickup-text"
+                  >Срок доставки: 1 день</span
+                >
+                <button class="order__delivery-pickup-button">
+                  Выбрать пункт самомывоза
+                </button>
+                <span class="order__delivery-pickup-text"
+                  >Заказ будет вас ждать по адресу: Новочеркасский Бульвар,
+                  д.20, к.5</span
+                >
+              </div>
+            </div>
+            <div class="order__delivery-content" id="delivery-content4">
+              Radio4 Contents
+            </div>
+          </div>
+          <div class="order__payment">
+            <h2 class="order__sub-title">Способ оплаты</h2>
+            <input
+              class="order__radio"
+              type="radio"
+              name="payment"
+              id="payment1"
+            />
+            <label class="order__label" for="payment1"
+              >Согласовать с менеджером
+            </label>
+            <input
+              class="order__radio"
+              type="radio"
+              name="payment"
+              id="payment2"
+              checked
+            />
+            <label class="order__label" for="payment2"
+              >Банковской картой
+            </label>
+            <input
+              class="order__radio"
+              type="radio"
+              name="payment"
+              id="payment3"
+            />
+            <label class="order__label" for="payment3">Переводом PayPal</label>
+            <input
+              class="order__radio"
+              type="radio"
+              name="payment"
+              id="payment4"
+            />
+            <label class="order__label" for="payment4">Наличными</label>
+          </div>
+          <div class="order__contacts">
+            <h2 class="order__sub-title">Ваши контакты</h2>
+            <div class="order__contacts-container">
+              <div class="order__contacts-wrapper">
+                <input
+                  class="order__radio"
+                  type="radio"
+                  name="contact"
+                  id="contact1"
+                  checked
+                />
+                <label class="order__label" for="contact1">Физ. лицо</label>
+              </div>
+              <div class="order__contacts-wrapper">
+                <input
+                  class="order__radio"
+                  type="radio"
+                  name="contact"
+                  id="contact2"
+                />
+                <label class="order__label" for="contact2">Юр. лицо / ИП</label>
+              </div>
+            </div>
+            <div class="order__person">
+              <div class="order__person-container">
+                <div class="order__person-column">
+                  <label for="person1" class="order__person-label">
+                    Имя*
+                    <input
+                      type="text"
+                      name="person"
+                      id="person1"
+                      class="order__text"
+                      placeholder="Введите имя"
+                    />
+                  </label>
+                  <label for="person2" class="order__person-label">
+                    E-mail
+                    <input
+                      type="email"
+                      name="person"
+                      id="person2"
+                      class="order__text"
+                      placeholder="Введите E-mail"
+                    />
+                  </label>
+                  <label for="person3" class="order__person-label">
+                    Город*
+                    <input
+                      type="text"
+                      name="person"
+                      id="person3"
+                      class="order__text"
+                      placeholder="Введите город"
+                    />
+                  </label>
+                  <label for="person4" class="order__person-label">
+                    Дом*
+                    <input
+                      type="text"
+                      name="person"
+                      id="person4"
+                      class="order__text"
+                      placeholder="Введите номер дома"
+                    />
+                  </label>
+                </div>
+                <div class="order__person-column">
+                  <label for="person5" class="order__person-label">
+                    Фамилия
+                    <input
+                      type="text"
+                      name="person"
+                      id="person5"
+                      class="order__text"
+                      placeholder="Введите фамилию"
+                    />
+                  </label>
+                  <label for="person6" class="order__person-label">
+                    Телефон*
+                    <input
+                      type="text"
+                      name="person"
+                      id="person6"
+                      class="order__text"
+                      placeholder="Введите номер телефона"
+                    />
+                  </label>
+                  <label for="person7" class="order__person-label">
+                    Улица*
+                    <input
+                      type="text"
+                      name="person"
+                      id="person7"
+                      class="order__text"
+                      placeholder="Введите улицу"
+                    />
+                  </label>
+                  <label for="person8" class="order__person-label">
+                    Квартира*
+                    <input
+                      type="text"
+                      name="person"
+                      id="person8"
+                      class="order__text"
+                      placeholder="Введите номер квартиры"
+                    />
+                  </label>
+                </div>
+              </div>
+              <textarea
+                name="person"
+                id="person9"
+                class="order__textarea"
+                placeholder="Укажите ваши пожелания к заказу"
+              ></textarea>
+              <div class="order__person-agree">
+                <input type="checkbox" class="order__person-agree-input" id="checkbox_1">
+                <label class="order__person-agree-label" for="checkbox_1">Даю согласие на обработку персональных данных</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="shop-cart__column-right">
-          <div class="shop-cart__buy">
-            <table class="shop-cart__buy-table" cellpadding="0" cellspacing="0">
+        <div class="order__column-right">
+          <div class="shop-cart__buy shop-cart__buy_order-page">
+            <table class="shop-cart__buy-table" cellspacing="0" cellpadding="0">
               <thead class="shop-cart__buy-title">
-                <th colspan="2">Ваш заказ</th>
+                <tr>
+                  <th colspan="2">Ваш заказ</th>
+                </tr>
               </thead>
               <tbody>
                 <tr>
@@ -1592,7 +1798,7 @@
                       shop-cart__buy-table-col shop-cart__buy-table-col_price
                     "
                   >
-                    4100 ₽
+                    4100 &#8381;
                   </td>
                 </tr>
               </tbody>
@@ -1611,7 +1817,7 @@
                       shop-cart__buy-table-col_total-count
                     "
                   >
-                    103380 ₽
+                    103380 &#8381;
                   </td>
                 </tr>
               </tfoot>
@@ -1636,7 +1842,7 @@
               />
             </div>
           </div>
-          <div class="discount">
+          <div class="discount discount_order-page">
             <input
               type="checkbox"
               id="discount-toggle"
@@ -1651,7 +1857,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer class="footer">
