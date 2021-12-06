@@ -438,7 +438,7 @@
   justify-content: center;
   width: 18px;
   height: 18px;
-  background-color: #FE4A49;
+  background-color: #fe4a49;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -2441,7 +2441,7 @@
 .card {
   max-width: 1290px;
   margin: 0 auto 0;
-  padding: 0 20px 70px;
+  padding: 0 0 70px;
   overflow-x: hidden;
 }
 
@@ -2623,6 +2623,14 @@
   display: table;
 }
 
+.card__table-tr {
+  display: flex;
+}
+
+.card__table-td:last-child {
+  margin: 0 0 7px auto;
+}
+
 .card__specs-title {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -2802,12 +2810,25 @@
       "product specs"
       "product buy"
       "full-specs full-specs";
+    padding: 40px 0 40px;
   }
   .card__buy {
     margin: 33px 0 0;
   }
   .card__table-wrapper {
-    padding: 34px 30px 0;
+    padding: 34px 10px 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .card__table-wrapper {
+    padding: 34px 0 0;
+  }
+  .card__table-tr {
+    flex-direction: column;
+  }
+  .card__table-td:last-child {
+    margin: 4px 0 8px;
   }
 }
 
@@ -3200,9 +3221,24 @@
 
   .card__buy {
     margin: 33px auto 0;
+    padding: 25px 15px 35px;
+  }
+
+  .card__to-basket {
+    width: 100%;
+  }
+
+  .card__fast_buy {
+    width: 100%;
   }
 
   .tabs__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tabs__more-label {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -3578,6 +3614,7 @@
   }
 
   .shop-cart__product .card__actions-item {
+    font-weight: 500;
     font-size: 12px;
     line-height: 15px;
   }
