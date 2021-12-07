@@ -4789,9 +4789,6 @@
   font-size: 18px;
 }
 
-.personal__content_red {
-}
-
 #personal1:checked ~ #content-personal1 {
   display: block;
 }
@@ -6170,3 +6167,6 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
   display: block;
 }
 
+.personal__recently {
+  padding: 0 0 60px;
+}
