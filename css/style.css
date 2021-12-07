@@ -5819,9 +5819,16 @@
 .personal__order {
   box-shadow: 0px 12px 40px 0px #4d546014;
   border-radius: 20px;
-  padding: 34px;
-  margin: 40px 0 0;
-  background: #fefefe;
+  padding: 15px 34px 15px;
+  background-color: #fefefe;
+}
+
+.personal__order:not(:last-child) {
+  margin: 40px 0 40px;
+}
+
+.personal__order:last-child {
+  margin: 40px 0 120px;
 }
 
 .personal__order-input {
@@ -5836,6 +5843,7 @@
 .personal__order-column {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 450px;
   width: 100%;
 }
@@ -5903,21 +5911,14 @@
   color: #adadad;
 }
 
+.personal__order-img {
+  max-width: 60px;
+}
+
 .personal__order-content {
   padding: 50px 0 42px;
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width: 1200px) {
-  .personal__order-wrapper {
-    flex-direction: column;
-  }
-
-  .personal__order-column {
-    flex-direction: column;
-    max-width: unset;
-  }
 }
 
 .personal__order-content-column {
@@ -5981,6 +5982,31 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1200px) {
+  .personal__order-wrapper {
+    flex-direction: column;
+  }
+
+  .personal__order-column {
+    flex-direction: column;
+    max-width: unset;
+    align-items: unset;
+  }
+
+  .personal__order-content {
+    flex-direction: column;
+  }
+
+  .personal__order-content-order {
+    margin: 20px 0 0;
+    padding: 15px;
+    min-width: unset;
+  }
+  .personal__order {
+    padding: 24px 15px;
+  }
+}
+
 .personal__order-content-title {
   margin: 0 0 24px;
   font-family: "Montserrat", sans-serif;
@@ -6016,6 +6042,7 @@
 
 .personal__order-content-td:last-child {
   font-size: 16px;
+  text-align: right;
 }
 
 .personal__order-content-td_black {
@@ -6033,7 +6060,7 @@ tfoot .personal__order-content-td {
   color: #151528;
 }
 
-tfoot .personal__order-content-td_big {
+tfoot .personal__order-content-td.personal__order-content-td_big {
   font-size: 24px;
   line-height: 29px;
   color: #151528;
