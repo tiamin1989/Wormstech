@@ -5821,14 +5821,11 @@
   border-radius: 20px;
   padding: 15px 34px 15px;
   background-color: #fefefe;
+  display: none;
 }
 
-.personal__order:not(:last-child) {
-  margin: 40px 0 40px;
-}
-
-.personal__order:last-child {
-  margin: 40px 0 120px;
+.personal__order {
+  margin: 40px 0 0;
 }
 
 .personal__order-input {
@@ -5982,6 +5979,30 @@
   box-sizing: border-box;
 }
 
+.personal__order-content-title {
+  margin: 0 0 24px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #151528;
+}
+
+.personal__order-content-paragraph {
+  max-width: 210px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #adadad;
+}
+
+.personal__date-container {
+  padding: 40px 0 120px;
+}
+
 @media (max-width: 1200px) {
   .personal__order-wrapper {
     flex-direction: column;
@@ -6004,27 +6025,17 @@
   }
   .personal__order {
     padding: 24px 15px;
+    margin: 40px 0 60px;
   }
-}
-
-.personal__order-content-title {
-  margin: 0 0 24px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #151528;
-}
-
-.personal__order-content-paragraph {
-  max-width: 210px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #adadad;
+  .personal__order-content-title {
+    font-size: 16px;
+  }
+  .personal__order-content-paragraph {
+    font-size: 12px;
+  }
+  .personal__date-container {
+    padding: 30px 0 60px;
+  }
 }
 
 .personal__order-content-paragraph > span {
@@ -6069,3 +6080,89 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
 .personal__order-content-table {
   width: 100%;
 }
+
+@media (max-width: 580px) {
+  .personal__order-label {
+    font-size: 14px;
+  }
+  .personal__order-info {
+    font-size: 12px;
+  }
+  .personal__order-title {
+    font-size: 14px;
+  }
+  .personal__order-link {
+    font-size: 12px;
+  }
+  .personal__order-text {
+    font-size: 12px;
+  }
+  .personal__order-content-title {
+    font-size: 16px;
+  }
+  .personal__order-content-paragraph {
+    font-size: 12px;
+  }
+  .personal__order-content-td {
+    font-size: 12px;
+  }
+  .personal__order-content-td:last-child {
+    font-size: 14px;
+  }
+  tfoot .personal__order-content-td {
+    font-size: 16px;
+  }
+  tfoot .personal__order-content-td.personal__order-content-td_big {
+    font-size: 18px;
+  }
+  .personal__order-content {
+    padding: 15px 0 0px;
+  }
+  .personal__order:last-child {
+    margin: 30px 0 50px;
+  }
+  .personal__order-title:not(:first-child) {
+    margin: 20px 0 10px;
+  }
+  .personal__date-container {
+    padding: 30px 0 10px;
+  }
+}
+
+.personal-date-input {
+  display: none;
+}
+
+.personal-date-label {
+  margin: 0 20px 0 0;
+  background-color: #e6e6e8;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #151528;
+  box-sizing: border-box;
+  width: 77px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.personal-date-label:hover {
+  background-color: #FE4A49;
+  color: #FEFEFE;
+}
+
+.personal-date-input:checked + .personal-date-label {
+  background-color: #FE4A49;
+  color: #FEFEFE;
+}
+
+#personal-order-date2:checked ~ #personal__order2 {
+  display: block;
+}
+
