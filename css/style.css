@@ -6162,6 +6162,10 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
   color: #FEFEFE;
 }
 
+#personal-order-date1:checked ~ #personal__order1 {
+  display: block;
+}
+
 #personal-order-date2:checked ~ #personal__order2 {
   display: block;
 }
