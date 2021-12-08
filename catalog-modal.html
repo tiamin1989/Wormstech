@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./catalog-modal.css" />
+  </head>
+  <body>
+    <div class="cat-desktop">
+      <!-- inputs loop for id _start -->
+      <input
+        type="radio"
+        name="cat"
+        id="cat1"
+        class="cat-desktop__radio"
+        checked
+      />
+      <input type="radio" name="cat" id="cat2" class="cat-desktop__radio" />
+      <input type="radio" name="cat" id="cat3" class="cat-desktop__radio" />
+      <!-- inputs loop for id _end -->
+
+      <div class="cat-desktop__label-wrapper">
+        <!-- labels loop for id _start -->
+        <label for="cat1" class="cat-desktop__label">Смартфоны и гаджеты</label>
+        <!--noindex-->
+        <div class="cat-desktop__items-wrapper cat-desktop__items-wrapper_mobile" id="cat-mobile-items1">
+          <div class="cat-desktop__items-col cat-desktop__items-col_mobile">
+            <h3 class="cat-desktop__items-title">Смартфоны</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Xiaomi" href="#" class="cat-desktop__link">Xiaomi</a>
+              <a rel="nofollow" title="Apple" href="#" class="cat-desktop__link">Apple</a>
+              <a rel="nofollow" title="Huawei" href="#" class="cat-desktop__link">Huawei</a>
+              <a rel="nofollow" title="Samsung" href="#" class="cat-desktop__link">Samsung</a>
+              <a rel="nofollow" title="Meizu" href="#" class="cat-desktop__link">Meizu</a>
+              <a rel="nofollow" title="LG" href="#" class="cat-desktop__link">LG</a>
+              <a rel="nofollow" title="Новинки" href="#" class="cat-desktop__link">Новинки</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more1" id="catalog-mobile-more1-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more1-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more1" id="catalog-mobile-more1-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more1-2">Спрятать</label>
+              </div>
+            </div>
+            <h3 class="cat-desktop__items-title">Телефоны</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Кнопочные телефоны" href="#" class="cat-desktop__link">Кнопочные телефоны</a>
+              <a rel="nofollow" title="Радио телефоны" href="#" class="cat-desktop__link">Радио телефоны</a>
+              <a rel="nofollow" title="Прочие телефоны" href="#" class="cat-desktop__link">Прочие телефоны</a>
+            </div>
+          </div>
+          <div class="cat-desktop__items-col cat-desktop__items-col_mobile">
+            <h3 class="cat-desktop__items-title">Аксесуары</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Наушники" href="#" class="cat-desktop__link">Наушники</a>
+              <a rel="nofollow" title="Зарядные устройства " href="#" class="cat-desktop__link">Зарядные устройства</a>
+              <a rel="nofollow" title="Защитные стекла" href="#" class="cat-desktop__link">Защитные стекла</a>
+              <a rel="nofollow" title="Защитные пленки" href="#" class="cat-desktop__link">Защитные пленки</a>
+              <a rel="nofollow" title="Карты памяти" href="#" class="cat-desktop__link">Карты памяти</a>
+              <a rel="nofollow" title="Внешние аккумуляторы" href="#" class="cat-desktop__link">Внешние аккумуляторы</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more2" id="catalog-mobile-more2-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more2-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more2" id="catalog-mobile-more2-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more2-2">Спрятать</label>
+              </div>
+            </div>
+          </div>
+          <div class="cat-desktop__items-col cat-desktop__items-col_mobile">
+            <h3 class="cat-desktop__items-title">Гаджеты</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Смарт часы" href="#" class="cat-desktop__link">Смарт часы</a>
+              <a rel="nofollow" title="Фитнесс браслеты" href="#" class="cat-desktop__link">Фитнесс браслеты</a>
+              <a rel="nofollow" title="Спортивные часы" href="#" class="cat-desktop__link">Спортивные часы</a>
+              <a rel="nofollow" title="Умные колонки" href="#" class="cat-desktop__link">Умные колонки</a>
+              <a rel="nofollow" title="Умные устройства" href="#" class="cat-desktop__link">Умные устройства</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more3" id="catalog-mobile-more3-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more3-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more3" id="catalog-mobile-more3-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more3-2">Спрятать</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/noindex-->
+        <label for="cat2" class="cat-desktop__label">Планшеты, ноутбуки и ПК</label>
+        <!--noindex-->
+        <div class="cat-desktop__items-wrapper cat-desktop__items-wrapper_mobile" id="cat-mobile-items2">
+          <div class="cat-desktop__items-col cat-desktop__items-col_mobile">
+            <h3 class="cat-desktop__items-title">Ноутбуки</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Xiaomi" href="#" class="cat-desktop__link">Xiaomi</a>
+              <a rel="nofollow" title="Apple" href="#" class="cat-desktop__link">Apple</a>
+              <a rel="nofollow" title="Lenovo" href="#" class="cat-desktop__link">Lenovo</a>
+              <a rel="nofollow" title="Samsung" href="#" class="cat-desktop__link">Samsung</a>
+              <a rel="nofollow" title="HP" href="#" class="cat-desktop__link">HP</a>
+              <a rel="nofollow" title="LG" href="#" class="cat-desktop__link">LG</a>
+              <a rel="nofollow" title="Игровые ноутбуки" href="#" class="cat-desktop__link">Игровые ноутбуки</a>
+              <a rel="nofollow" title="Трансформеры" href="#" class="cat-desktop__link">Трансформеры</a>
+              <a rel="nofollow" title="Новинки" href="#" class="cat-desktop__link">Новинки</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more4" id="catalog-mobile-more4-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more4-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more4" id="catalog-mobile-more4-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more4-2">Спрятать</label>
+              </div>
+            </div>
+            <h3 class="cat-desktop__items-title">Аксессуары для ноубуков и ПК</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Мышки" href="#" class="cat-desktop__link">Мышки</a>
+              <a rel="nofollow" title="Клавиатуры" href="#" class="cat-desktop__link">Клавиатуры</a>
+              <a rel="nofollow" title="Колонки" href="#" class="cat-desktop__link">Колонки</a>
+              <a rel="nofollow" title="Гарнитуры" href="#" class="cat-desktop__link">Гарнитуры</a>
+              <a rel="nofollow" title="Вэб-камеры" href="#" class="cat-desktop__link">Вэб-камеры</a>
+              <a rel="nofollow" title="USB-флешки" href="#" class="cat-desktop__link">USB-флешки</a>
+              <a rel="nofollow" title="Роутеры" href="#" class="cat-desktop__link">Роутеры</a>
+              <a rel="nofollow" title="Сумки для ноутбуков" href="#" class="cat-desktop__link">Сумки для ноутбуков</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more5" id="catalog-mobile-more5-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more5-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more5" id="catalog-mobile-more54-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more5-2">Спрятать</label>
+              </div>
+            </div>
+          </div>
+          <div class="cat-desktop__items-col cat-desktop__items-col_mobile">
+            <h3 class="cat-desktop__items-title">Планшеты</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Xiaomi" href="#" class="cat-desktop__link">Xiaomi</a>
+              <a rel="nofollow" title="Apple" href="#" class="cat-desktop__link">Apple</a>
+              <a rel="nofollow" title="Lenovo" href="#" class="cat-desktop__link">Lenovo</a>
+              <a rel="nofollow" title="Samsung" href="#" class="cat-desktop__link">Samsung</a>
+              <a rel="nofollow" title="HP" href="#" class="cat-desktop__link">HP</a>
+              <a rel="nofollow" title="LG" href="#" class="cat-desktop__link">LG</a>
+              <a rel="nofollow" title="Электронные книги" href="#" class="cat-desktop__link">Электронные книги</a>
+              <a rel="nofollow" title="Новинки" href="#" class="cat-desktop__link">Новинки</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more6" id="catalog-mobile-more6-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more6-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more6" id="catalog-mobile-more6-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more6-2">Спрятать</label>
+              </div>
+            </div>
+            <h3 class="cat-desktop__items-title">Аксессуары для планшетов</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Чехлы" href="#" class="cat-desktop__link">Чехлы</a>
+              <a rel="nofollow" title="Защитные стекла" href="#" class="cat-desktop__link">Защитные стекла</a>
+              <a rel="nofollow" title="Защитные пленки" href="#" class="cat-desktop__link">Защитные пленки</a>
+              <a rel="nofollow" title="Карты памяти" href="#" class="cat-desktop__link">Карты памяти</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more7" id="catalog-mobile-more7-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more7-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more7" id="catalog-mobile-more7-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more7-2">Спрятать</label>
+              </div>
+            </div>
+            <h3 class="cat-desktop__items-title">Перефирийные устройства</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="МФУ" href="#" class="cat-desktop__link">МФУ</a>
+              <a rel="nofollow" title="Принтеры" href="#" class="cat-desktop__link">Принтеры</a>
+              <a rel="nofollow" title="Сканеры" href="#" class="cat-desktop__link">Сканеры</a>
+              <a rel="nofollow" title="Картриджи" href="#" class="cat-desktop__link">Картриджи</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more8" id="catalog-mobile-more8-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more8-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more8" id="catalog-mobile-more8-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more8-2">Спрятать</label>
+              </div>
+            </div>
+          </div>
+          <div class="cat-desktop__items-col cat-desktop__items-col_mobile">
+            <h3 class="cat-desktop__items-title">ПК и мониторы</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Мониторы" href="#" class="cat-desktop__link">Мониторы</a>
+              <a rel="nofollow" title="Игровые мониторы" href="#" class="cat-desktop__link">Игровые мониторы</a>
+              <a rel="nofollow" title="Моноблоки" href="#" class="cat-desktop__link">Моноблоки</a>
+              <a rel="nofollow" title="Системные блоки" href="#" class="cat-desktop__link">Системные блоки</a>
+              <a rel="nofollow" title="Игровые системные блоки" href="#" class="cat-desktop__link">Игровые системные блоки</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more9" id="catalog-mobile-more9-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more9-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more9" id="catalog-mobile-more9-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more9-2">Спрятать</label>
+              </div>
+            </div>
+            <h3 class="cat-desktop__items-title">Комплектующие для ПК</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Процессоры" href="#" class="cat-desktop__link">Процессоры</a>
+              <a rel="nofollow" title="Видеокарты" href="#" class="cat-desktop__link">Видеокарты</a>
+              <a rel="nofollow" title="Жесткие диски (SSD, HDD)" href="#" class="cat-desktop__link">Жесткие диски (SSD, HDD)</a>
+              <a rel="nofollow" title="Оперативная память" href="#" class="cat-desktop__link">Оперативная память</a>
+              <a rel="nofollow" title="Материнские платы" href="#" class="cat-desktop__link">Материнские платы</a>
+              <a rel="nofollow" title="Блоки питания" href="#" class="cat-desktop__link">Блоки питания</a>
+              <a rel="nofollow" title="Корпуса" href="#" class="cat-desktop__link">Корпуса</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more10" id="catalog-mobile-more10-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more10-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more10" id="catalog-mobile-more10-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more10-2">Спрятать</label>
+              </div>
+            </div>
+            <h3 class="cat-desktop__items-title">Сетевое оборудование</h3>
+            <div class="cat-desktop__items-links">
+              <a rel="nofollow" title="Wi-fi роутеры" href="#" class="cat-desktop__link">Wi-fi роутеры</a>
+              <a rel="nofollow" title="Сетевые адаптеры" href="#" class="cat-desktop__link">Сетевые адаптеры</a>
+              <a rel="nofollow" title="Беспроводные точки доступа" href="#" class="cat-desktop__link">Беспроводные точки доступа</a>
+              <div class="cat-desktop__more">
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more11" id="catalog-mobile-more11-1">
+                <label class="cat-desktop__more__label" for="catalog-mobile-more11-1">Показать все</label>
+                <div class="cat-desktop__more__content">
+                  <a rel="nofollow" title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                  <a rel="nofollow" title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+                </div>
+                <input class="cat-desktop__more__input" type="radio" name="catalog-mobile-more11" id="catalog-mobile-more11-2" checked>
+                <label class="cat-desktop__more__label" for="catalog-mobile-more11-2">Спрятать</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/noindex-->
+        <label for="cat3" class="cat-desktop__label">Телевизоры и аксессуары</label>
+        <!-- labels loop for id _end -->
+      </div>
+
+      <div class="cat-desktop__items-wrapper" id="cat-items1">
+        <div class="cat-desktop__items-col">
+          <h3 class="cat-desktop__items-title">Смартфоны</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Xiaomi" href="#" class="cat-desktop__link">Xiaomi</a>
+            <a title="Apple" href="#" class="cat-desktop__link">Apple</a>
+            <a title="Huawei" href="#" class="cat-desktop__link">Huawei</a>
+            <a title="Samsung" href="#" class="cat-desktop__link">Samsung</a>
+            <a title="Meizu" href="#" class="cat-desktop__link">Meizu</a>
+            <a title="LG" href="#" class="cat-desktop__link">LG</a>
+            <a title="Новинки" href="#" class="cat-desktop__link">Новинки</a>
+            <div class="cat-desktop__more">
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more1" id="catalog-more1-1">
+              <label class="cat-desktop__more__label" for="catalog-more1-1">Показать все</label>
+              <div class="cat-desktop__more__content">
+                <a title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                <a title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+              </div>
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more1" id="catalog-more1-2" checked>
+              <label class="cat-desktop__more__label" for="catalog-more1-2">Спрятать</label>
+            </div>
+          </div>
+          <h3 class="cat-desktop__items-title">Телефоны</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Кнопочные телефоны" href="#" class="cat-desktop__link">Кнопочные телефоны</a>
+            <a title="Радио телефоны" href="#" class="cat-desktop__link">Радио телефоны</a>
+            <a title="Прочие телефоны" href="#" class="cat-desktop__link">Прочие телефоны</a>
+          </div>
+        </div>
+        <div class="cat-desktop__items-col">
+          <h3 class="cat-desktop__items-title">Аксесуары</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Наушники" href="#" class="cat-desktop__link">Наушники</a>
+            <a title="Зарядные устройства " href="#" class="cat-desktop__link">Зарядные устройства</a>
+            <a title="Защитные стекла" href="#" class="cat-desktop__link">Защитные стекла</a>
+            <a title="Защитные пленки" href="#" class="cat-desktop__link">Защитные пленки</a>
+            <a title="Карты памяти" href="#" class="cat-desktop__link">Карты памяти</a>
+            <a title="Внешние аккумуляторы" href="#" class="cat-desktop__link">Внешние аккумуляторы</a>
+            <div class="cat-desktop__more">
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more2" id="catalog-more2-1">
+              <label class="cat-desktop__more__label" for="catalog-more2-1">Показать все</label>
+              <div class="cat-desktop__more__content">
+                <a title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                <a title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+              </div>
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more2" id="catalog-more2-2" checked>
+              <label class="cat-desktop__more__label" for="catalog-more2-2">Спрятать</label>
+            </div>
+          </div>
+        </div>
+        <div class="cat-desktop__items-col">
+          <h3 class="cat-desktop__items-title">Гаджеты</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Смарт часы" href="#" class="cat-desktop__link">Смарт часы</a>
+            <a title="Фитнесс браслеты" href="#" class="cat-desktop__link">Фитнесс браслеты</a>
+            <div class="cat-desktop__more">
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more3" id="catalog-more3-1">
+              <label class="cat-desktop__more__label" for="catalog-more3-1">Показать все</label>
+              <div class="cat-desktop__more__content">
+                <a title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                <a title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+              </div>
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more3" id="catalog-more3-2" checked>
+              <label class="cat-desktop__more__label" for="catalog-more3-2">Спрятать</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cat-desktop__items-wrapper" id="cat-items2">
+        <div class="cat-desktop__items-col">
+          <h3 class="cat-desktop__items-title">Ноутбуки</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Xiaomi" href="#" class="cat-desktop__link">Xiaomi</a>
+            <a title="Apple" href="#" class="cat-desktop__link">Apple</a>
+            <div class="cat-desktop__more">
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more4" id="catalog-more4-1">
+              <label class="cat-desktop__more__label" for="catalog-more4-1">Показать все</label>
+              <div class="cat-desktop__more__content">
+                <a title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                <a title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+              </div>
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more4" id="catalog-more4-2" checked>
+              <label class="cat-desktop__more__label" for="catalog-more4-2">Спрятать</label>
+            </div>
+          </div>
+          <h3 class="cat-desktop__items-title">Аксессуары для ноубуков и ПК</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Кнопочные телефоны" href="#" class="cat-desktop__link">Кнопочные телефоны</a>
+            <a title="Радио телефоны" href="#" class="cat-desktop__link">Радио телефоны</a>
+          </div>
+        </div>
+        <div class="cat-desktop__items-col">
+          <h3 class="cat-desktop__items-title">Планшеты</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Наушники" href="#" class="cat-desktop__link">Наушники</a>
+            <a title="Зарядные устройства " href="#" class="cat-desktop__link">Зарядные устройства</a>
+            <div class="cat-desktop__more">
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more5" id="catalog-more5-1">
+              <label class="cat-desktop__more__label" for="catalog-more5-1">Показать все</label>
+              <div class="cat-desktop__more__content">
+                <a title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                <a title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+              </div>
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more5" id="catalog-more5-2" checked>
+              <label class="cat-desktop__more__label" for="catalog-more5-2">Спрятать</label>
+            </div>
+          </div>
+        </div>
+        <div class="cat-desktop__items-col">
+          <h3 class="cat-desktop__items-title">ПК и мониторы</h3>
+          <div class="cat-desktop__items-links">
+            <a title="Смарт часы" href="#" class="cat-desktop__link">Смарт часы</a>
+            <a title="Фитнесс браслеты" href="#" class="cat-desktop__link">Фитнесс браслеты</a>
+            <div class="cat-desktop__more">
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more6" id="catalog-more6-1">
+              <label class="cat-desktop__more__label" for="catalog-more6-1">Показать все</label>
+              <div class="cat-desktop__more__content">
+                <a title="Пункт 1" href="#" class="cat-desktop__link">Пункт 1</a>
+                <a title="Пункт 2" href="#" class="cat-desktop__link">Пункт 2</a>
+              </div>
+              <input class="cat-desktop__more__input" type="radio" name="catalog-more6" id="catalog-more6-2" checked>
+              <label class="cat-desktop__more__label" for="catalog-more6-2">Спрятать</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+
+
+
+    </div>
+
+
+  </body>
+</html>
