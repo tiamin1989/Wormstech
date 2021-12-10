@@ -4495,7 +4495,10 @@
 .personal__label-in {
   border-bottom: 1px solid #e6e6e8;
   padding: 0 0 14px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .personal__label-empty {
@@ -5560,11 +5563,17 @@
   display: none;
 }
 
-.catalog-sec__filter-item > input + .catalog-sec__title > .catalog-sec__title-arrow {
+.catalog-sec__filter-item
+  > input
+  + .catalog-sec__title
+  > .catalog-sec__title-arrow {
   transform: rotate(180deg);
 }
 
-.catalog-sec__filter-item > input:checked + .catalog-sec__title > .catalog-sec__title-arrow {
+.catalog-sec__filter-item
+  > input:checked
+  + .catalog-sec__title
+  > .catalog-sec__title-arrow {
   transform: rotate(0deg);
 }
 
@@ -5624,7 +5633,10 @@
   line-height: 22px;
   color: #fe4a49;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
 }
 
@@ -5923,13 +5935,13 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
 }
 
 .personal-date-label:hover {
-  background-color: #FE4A49;
-  color: #FEFEFE;
+  background-color: #fe4a49;
+  color: #fefefe;
 }
 
 .personal-date-input:checked + .personal-date-label {
-  background-color: #FE4A49;
-  color: #FEFEFE;
+  background-color: #fe4a49;
+  color: #fefefe;
 }
 
 #personal-order-date1:checked ~ #personal__order1 {
@@ -5944,9 +5956,6 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
   padding: 0 0 60px;
 }
 
-
-
-
 #cat-modal-input {
   display: none;
 }
@@ -5956,7 +5965,7 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
 }
 
 .cat-modal {
-  max-width: 1100px;
+  max-width: 1150px;
   box-sizing: border-box;
   width: 100%;
   padding: 57px 60px;
@@ -5968,7 +5977,7 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
-  background-color: #FEFEFE;
+  background-color: #fefefe;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
 }
@@ -6045,7 +6054,10 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
   align-items: center;
   position: relative;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .cat-modal__label:hover {
@@ -6131,7 +6143,10 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
   color: #b2b1b5;
   text-decoration: none;
   white-space: nowrap;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
@@ -6158,27 +6173,27 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
 }
 
 /* fill this block if new elements in menu _start */
-#cat1:checked ~ .cat-modal__label-wrapper > label[for=cat1] {
+#cat1:checked ~ .cat-modal__label-wrapper > label[for="cat1"] {
   background-color: #f0f2f8;
 }
 
-#cat2:checked ~ .cat-modal__label-wrapper > label[for=cat2] {
+#cat2:checked ~ .cat-modal__label-wrapper > label[for="cat2"] {
   background-color: #f0f2f8;
 }
 
-#cat3:checked ~ .cat-modal__label-wrapper > label[for=cat3] {
+#cat3:checked ~ .cat-modal__label-wrapper > label[for="cat3"] {
   background-color: #f0f2f8;
 }
 
-#cat4:checked ~ .cat-modal__label-wrapper > label[for=cat4] {
+#cat4:checked ~ .cat-modal__label-wrapper > label[for="cat4"] {
   background-color: #f0f2f8;
 }
 
-#cat5:checked ~ .cat-modal__label-wrapper > label[for=cat5] {
+#cat5:checked ~ .cat-modal__label-wrapper > label[for="cat5"] {
   background-color: #f0f2f8;
 }
 
-#cat6:checked ~ .cat-modal__label-wrapper > label[for=cat6] {
+#cat6:checked ~ .cat-modal__label-wrapper > label[for="cat6"] {
   background-color: #f0f2f8;
 }
 
