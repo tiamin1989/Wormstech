@@ -6066,7 +6066,7 @@ tfoot .personal__order-content-td.personal__order-content-td_big {
 
 .cat-modal__label::after {
   content: "";
-  background: url("./img/arrow.svg") center no-repeat;
+  background: url("../img/arrow.svg") center no-repeat;
   background-size: contain;
   width: 16px;
   height: 16px;
